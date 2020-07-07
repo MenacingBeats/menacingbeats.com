@@ -4,7 +4,7 @@ Welcome to Meancingbeats.com github repository!
 From here the project team can add(push) or download(pull) the current master code repository to work on collectively. 
 
 What do i need to use these services?
-1. Download Visual Studio Code https://code.visualstudio.com/
+1. Download Visual Studio Code https://code.visualstudio.com/ + open VS Code and download the extension for github compatability
 2. Download git from https://git-scm.com/downloads
 3. Create a personal github account 
 3. Learn the basics of git & github 
