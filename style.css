@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    cursor: pointer;
+}
+
+/* NAVBAR */
+
+/* background color for top nav */
+.topNav {
+    background-color: #1e1e1e;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+/* Style links inside the navbar */
+.nav-container {
+    margin-left: 15px;
+}
+
+.nav-container a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 40px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* make menaacingbeats website text slightly bigger */
+nav .nav-container .menacingbeats-com {
+    font-size: 15px;
+}
+
+/* change color of links on hover */
+.nav-container a:hover {
+    /* background-color: #ddd; */
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* add an active class to highlight current page */
+.nav-container a.active {
+    background-color: #ddd;
+    color: white;
+}
+
+/* Hide the hamburger menu for large screens */
+.topNav .icon {
+    display: none;
+}
+
+/* NAVBAR SOCIALS */
+
+.social-icons {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    margin-right: 15px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li img {
+    height: 30px;
+    padding: 0 7px;
+}
+
+.social-icons img:hover {
+    /* background-color: #ddd; */
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+
+/* When the screen is less than 600px wide, hide all links except hamburger menu */
+@media screen and (max-width: 778px) {
+    .topNav a:not(:first-child) {display: none;}
+    .topNav a.icon {
+        display: flex;
+        display: inline-block;
+        align-items: flex-start;
+    }
+}
+
+/* Responsive class added to topnav with Javascript when user clicks. Topnav looks better on small screens (vertically) */
+@media screen and (max-width: 788px) {
+    .topNav.responsive {position: relative;}
+    .topNac.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+}
+.topNav.responsive a {
+    text-align: left;
+    display: block;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+/* Header */
+
+/* scrolling ticker */
+header .t-container {
+    width: 100%;
+    overflow: hidden; 
+    /* Hide scroll bar */
+}
+
+header .ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+    /* pushes contents to the right side of the screen */
+    background-color: #1e1e1e;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .8em;
+}
+
+@keyframes ticker {
+    0% {transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0);}
+}
+
+.ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 140s;
+}
+
+.ticker-move:hover {
+    animation-play-state: paused;
+    /* Pause scroll on mouse hover */
+}
+
+header .ticker-item {
+    display: inline-block;
+    /* lay items in a horiztonal line */
+    padding: 0 1rem;
+}
+
+/* Main */
+
+/* sotd */
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sotd-container {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sotd-container h1 {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: purple;
+    background-color: white;
+    width: 548.75px;
+    text-align: left;
+    padding: 0 0 0 8px;
+}
+
+.sotd-header {
+    display: flex;
+    justify-content: start;
+}
+
+#sotd-date {
+    background-color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    padding: 0 8px 0 0;
+    color: purple;
+}
+
+/* Grid of links */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid {
+    width: 684px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    border: 1px solid red;
+    width: 340px;
+    height: 340px;
+}
