@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     background-color: #1e1e1e;
-    cursor: pointer;
 }
 
 /* NAVBAR */
@@ -38,6 +37,12 @@ nav .nav-container .menacingbeats-com {
     font-size: 15px;
 }
 
+nav .nav-container img {
+    height: 20px;
+    width: auto;
+    text-align: center;
+}
+
 /* change color of links on hover */
 .nav-container a:hover {
     /* background-color: #ddd; */
@@ -57,6 +62,11 @@ nav .nav-container .menacingbeats-com {
     display: none;
 }
 
+/* Makes the hamburger menu slightly bigger */
+nav .icon {
+    font-size: 17px;
+}
+
 /* NAVBAR SOCIALS */
 
 .social-icons {
@@ -64,17 +74,17 @@ nav .nav-container .menacingbeats-com {
     margin: 0;
 }
 
-ul {
+nav ul {
     display: flex;
     margin-right: 15px;
 }
 
-ul li {
+nav ul li {
     list-style-type: none;
 }
 
-ul li img {
-    height: 30px;
+nav ul li img {
+    height: 40px;
     padding: 0 7px;
 }
 
@@ -87,30 +97,130 @@ ul li img {
 
 /* When the screen is less than 600px wide, hide all links except hamburger menu */
 @media screen and (max-width: 778px) {
-    .topNav a:not(:first-child) {display: none;}
-    .topNav a.icon {
-        display: flex;
+    .nav-container a:not(:first-child) {display: none;}
+    .nav-container a.icon {
+        /* display: flex;
         display: inline-block;
-        align-items: flex-start;
+        align-items: flex-start; */
+        float: left;
+        display: block;
     }
+
+    .sotd-container {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .sotd-container h1 {
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', cursive;
+        color: purple;
+        background-color: white;
+        width: 549.75px;
+        text-align: left;
+        padding: 0 0 0 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sotd-header {
+        display: flex;
+        justify-content: start;
+    }
+    
+    #sotd-date {
+        background-color: white;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.5em;
+        padding: 0 8px 0 0;
+        color: purple;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
 }
 
 /* Responsive class added to topnav with Javascript when user clicks. Topnav looks better on small screens (vertically) */
 @media screen and (max-width: 788px) {
-    .topNav.responsive {position: relative;}
-    .topNac.responsive a.icon {
+    .nav-container.responsive {position: relative;}
+    .nav-container.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
-    }
+    
 }
-.topNav.responsive a {
-    text-align: left;
+.nav-container .responsive a {
+    /* display: block;
+    text-align: left; */
+    float: none;
     display: block;
-    display: flex;
-    align-items: flex-start;
+    text-align: left;
 }
 
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sotd-container {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sotd-container h1 {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    color: purple;
+    background-color: white;
+    width: 549.75px;
+    text-align: left;
+    padding: 0 0 0 8px;
+}
+
+.sotd-header {
+    display: flex;
+    justify-content: start;
+}
+
+#sotd-date {
+    background-color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    padding: 0 8px 0 0;
+    color: purple;
+}
+
+/* Grid of links */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid {
+    width: 684px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    width: 340px;
+    height: 340px;
+}
+}
 
 /* Header */
 
@@ -168,7 +278,6 @@ header .ticker-item {
 }
 
 .sotd-container {
-    width: 100%;
     text-align: center;
     font-size: 1.5em;
     display: flex;
@@ -176,27 +285,40 @@ header .ticker-item {
     justify-content: center;
 }
 
+/* SOTD H1 HEADING */
 .sotd-container h1 {
     text-transform: uppercase;
-    font-family: 'Bebas Neue', cursive;
-    color: purple;
+    font-family: 'Orbitron', sans-serif;
+    color: #9d2236;
     background-color: white;
-    width: 548.75px;
-    text-align: left;
-    padding: 0 0 0 8px;
+    width: 100%;
+    text-align: center;
+    padding: 0 0 0 60px;
+    font-size: 3rem;
 }
 
 .sotd-header {
     display: flex;
     justify-content: start;
+    width: 100%;
 }
 
 #sotd-date {
     background-color: white;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 1.5em;
-    padding: 0 8px 0 0;
-    color: purple;
+    font-family: 'Orbitron', sans-serif;;
+    font-size: 3rem;
+    padding: 0 0 0 0;
+    color: #9d2236;
+}
+
+#countdown {
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    background: white;
+    font-size: 3rem;
+    color: #9d2236;
+    font-family: 'Orbitron', sans-serif;
 }
 
 /* Grid of links */
@@ -204,17 +326,195 @@ header .ticker-item {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 40px;
 }
 
 .grid {
-    width: 684px;
+    width: 900px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .grid-item {
-    border: 1px solid red;
     width: 340px;
     height: 340px;
+    padding: 20px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    box-shadow: 1px 1px#9d2236;
+}
+
+.grid-item:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.grid-text {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    background-color: transparent;
+    text-shadow: 1px 1px grey;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+}
+
+.footer-container {
+    background-color: black;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .blurb {
+    background: black;
+    display: flex;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin: 0px 40px;
+    width: 400px;
+    padding: 10px;
+}
+
+footer .all-social-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    background-color: white;
+    background-color: black;
+    list-style-type: none;
+    padding-top: 30px; 
+}
+
+footer .all-social-links img {
+    background-color: black;
+    height:40px;
+    padding: 0px 5px;
+}
+
+footer ul li {
+    display: flex;
+    background-color: black;
+    list-style-type: none;
+    color: black;
+}
+
+footer a {
+    color: white;
+    background: black;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+.footer-right {
+    display: flex;
+    background-color: black;
+    line-height: 150%;
+    padding-right: 10px;
+}
+
+/* Nav links in footer */
+.footer-links {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    padding: 7px;
+}
+
+footer img:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+footer .footer-links a:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* // SOTD PAGE WEEK ARCHIVE */
+article .sotd-banner h1 {
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    color: #9d2236;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.sotd-day-container {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+section .sotd-video-box {
+    width: 400px;
+    height: auto;
+}
+
+section .sotd-day {
+    height: 100px;
+    width: 100px;
+    box-shadow: 1px 1px #9d2236;
+    background-color: lightgrey;
+}
+
+.sotd-month {
+    color: white;
+}
+
+section .sotd-selector {
+    height: 400px;
+    width: 400px;
+    border: 1px solid yellow;
 }
