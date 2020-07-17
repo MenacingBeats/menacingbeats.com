@@ -525,3 +525,11 @@ section .sotd-selector {
     width: 400px;
     border: 1px solid yellow;
 }
+
+
+.pending {
+    color: white;
+    font-size: 100px;
+    height: 100vh;
+    text-align: center;
+}
