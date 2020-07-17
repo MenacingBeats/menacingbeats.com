@@ -48,15 +48,4 @@ document.getElementById("sotd-date").innerHTML = dateTime;
         }
     }, 1000);
 
-    // let today = new Date();
-    // let date = today.getFullYear()+'.'+(today.getMonth()+1)+'.'+today.getDate();
-    // let dateTime = date;
 
-    // document.getElementById("sotd-date").innerHTML = dateTime;
-
-
-    let currentMonth = new Date();
-    let date2 = (currentMonth.getMonth()+1);
-    let sotdMonth = date2;
-
-    document.getElementById("month").innerHTML = sotdMonth;

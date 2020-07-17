@@ -505,12 +505,19 @@ section .sotd-video-box {
 section .sotd-day {
     height: 100px;
     width: 100px;
-    box-shadow: 1px 1px #9d2236;
     background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
 }
 
 .sotd-month {
-    color: white;
+    color: #1e1e1e
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: lightgrey;
 }
 
 section .sotd-selector {
