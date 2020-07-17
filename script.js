@@ -10,9 +10,9 @@ function hamburger() {
 
 // show months and date on song of the week.
 
-
-
-// show current date of SOTD
+// rebuild this as a 24hr countdown clock
+// https://vincoding.com/weekly-repeating-countdown-timer-javascript/
+// // show current date of SOTD
 let today = new Date();
 let date = today.getFullYear()+'.'+(today.getMonth()+1)+'.'+today.getDate();
 let dateTime = date;
