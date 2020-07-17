@@ -513,7 +513,7 @@ section .sotd-day {
 }
 
 .sotd-month {
-    color: #1e1e1e
+    color: #1e1e1e;
     text-align: center;
     font-size: 20px;
     font-family: 'Orbitron', sans-serif;

@@ -21,7 +21,7 @@ document.getElementById("sotd-date").innerHTML = dateTime;
 //countdown clock for SOTD
 
     //set the date we countdown to
-    let countDownDate = new Date("Jul 18, 2020 00:00:00").getTime();
+    let countDownDate = new Date("Jul 19, 2020 00:00:00").getTime();
 
     //update the coundown every 1 second
     let x = setInterval(function() {
