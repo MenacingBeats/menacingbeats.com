@@ -107,15 +107,15 @@ nav ul li img {
     }
 
     .sotd-container {
-        width: 100%;
-        text-align: center;
-        font-size: 1.5em;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
     }
-    
+        
     .sotd-container h1 {
         text-transform: uppercase;
         font-family: 'Bebas Neue', cursive;
@@ -128,24 +128,126 @@ nav ul li img {
         align-items: center;
         justify-content: center;
     }
-    
+        
     .sotd-header {
         display: flex;
         justify-content: start;
     }
-    
+        
     #sotd-date {
-        background-color: white;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 1.5em;
-        padding: 0 8px 0 0;
-        color: purple;
-        display: flex;
-        flex-wrap: wrap;
+        display: none;
     }
 
+    #wire-beetroot {
+        display: none;
+    }
+
+    div p#countdown {
+        display: none;
+    }
+
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+    }
+
+    .sotd-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    html footer {
+        width: 100%;
+    }
+    
+    html .footer-container {
+        background-color: black;
+        height: 150px;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    html footer .blurb {
+        background: black;
+        display: flex;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        margin: 0px 0px;
+        width: 100%;
+    }
+    
+    footer .all-social-links {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        background-color: black;
+        list-style-type: none;
+    }
+    
+    html footer .all-social-links img {
+        background-color: black;
+        height: 30px;
+        padding: 0px 5px;
+    }
+    
+    footer ul li {
+        display: flex;
+        background-color: black;
+        list-style-type: none;
+        color: black;
+    }
+    
+    footer a {
+        color: white;
+        background: black;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+    }
+    
+    .footer-right {
+        display: flex;
+        background-color: black;
+        line-height: 150%;
+        padding-right: 0px;
+    }
+    
+    /* Nav links in footer */
+    html .footer-links {
+        display: flex;
+        background-color: black;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 7px;
+    }
 
 }
+
+
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+/* END RESPONSIVE DESIGN */
+
 
 /* Responsive class added to topnav with Javascript when user clicks. Topnav looks better on small screens (vertically) */
 @media screen and (max-width: 788px) {
