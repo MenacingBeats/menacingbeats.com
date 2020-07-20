@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #444444;
+    background-color: #25221e;
 }
 
 /* NAVBAR */
@@ -22,6 +22,7 @@
     text-decoration: none;
     font-size: 17px;
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: #444444;
 }
 
 /* change color of links on hover */
@@ -39,7 +40,7 @@
 .topNav a.active {
     background-color: none;
     color:red;
-    text-shadow: 1px 1px 1px #760828;
+    text-shadow: 2px 2px 4px #760828;
 }
 /* Hide the hamburger menu for large screens */
 .topNav .icon {
@@ -49,10 +50,12 @@
 
 .fa-bars {
     padding: 0px 10px;
+    background-color: #444444;
 }
 
+
 /* When the screen is less than 1000px wide, hide all links except hamburger menu */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 690px) {
     .topNav a:not(:first-child) {display: none;}
     .topNav a.icon {
         float: right;
@@ -264,7 +267,7 @@
 
 
 /* Responsive class added to topnav with Javascript when user clicks. Topnav looks better on small screens (vertically) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 690px) {
     .topNav.responsive {position: relative;}
     .topNav.responsive a.icon {
     position: absolute;
@@ -367,7 +370,7 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     padding: 20px 0px;
-    border: 1px black;
+    border: 1px red;
     border-style: solid none;
 }
 
@@ -384,6 +387,7 @@
     animation-timing-function: linear;
     animation-name: ticker;
     animation-duration: 140s;
+    background-color: #444444;
 }
 
 .ticker-move:hover {
@@ -395,6 +399,7 @@
     display: inline-block;
     /* lay items in a horiztonal line */
     padding: 0 1rem;
+    background-color: #444444;
 }
 
 /* Main */
@@ -427,15 +432,40 @@
     font-size: 17px;
     display: flex;
     justify-content: space-around;
-    border: 1px solid black;
+    border: 1px solid ;
     padding: 20px 0px;
 }
 
-.sotd-header {
+/* <div class="mb-review">
+            <div class="mb-review-container">
+                <div class="mb-box"></div>
+                <div class="mb-box2"></div>
+            </div>
+        </div> */
+
+.mb-review {
+            width: 100%;
+            height: 265px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+
+.mb-review-container {
+    width: 940px;
+    height: 265px;
+    border: 1px solid red;
+    border-top: none;
     display: flex;
-    justify-content: start;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
+
 
 #sotd-date {
     background-color: white;
@@ -460,29 +490,27 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 40px;
 }
 
 .grid {
-    width: 900px;
+    width: 940px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .grid-item {
-    width: 340px;
-    height: 340px;
-    padding: 20px 20px;
+    width: 300px;
+    height: 300px;
     position: relative;
     text-align: center;
+    border: 1px solid red;
 }
 
 .grid-item img {
-    width: 340px;
-    height: 340px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    box-shadow: 1px 1px#9d2236;
 }
 
 .grid-item:hover {
