@@ -1,10 +1,10 @@
 // toggle between responsive class navbar
 function hamburger() {
     let x = document.getElementById("myTopNav");
-    if (x.className === "nav-container") {
+    if (x.className === "topNav") {
         x.className += " responsive";
     } else {
-        x.className = "nav-container";
+        x.className = "topNav";
     }
 }
 
@@ -48,4 +48,22 @@ document.getElementById("sotd-date").innerHTML = dateTime;
         }
     }, 1000);
 
+    let month = new Array();
+    month[0] = "JAN";
+    month[1] = "FEB";
+    month[2] = "MAR";
+    month[3] = "APR";
+    month[4] = "MAY";
+    month[5] = "JUN";
+    month[6] = "JUL";
+    month[7] = "AUG";
+    month[8] = "SEP";
+    month[9] = "OCT";
+    month[10] = "NOV";
+    month[11] = "DEC";
 
+    let currentMonth = new Date();
+    let date2 = month[currentMonth.getMonth()] + '' + currentMonth.getDate();
+    let sotdMonth = date2;
+
+document.getElementById("month").innerHTML = sotdMonth;

@@ -7,104 +7,55 @@
 /* NAVBAR */
 
 /* background color for top nav */
+
 .topNav {
     background-color: #444444;
     overflow: hidden;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
 }
-
-/* Style links inside the navbar */
-.nav-container {
-    margin-left: 15px;
-    overflow: hidden;
-}
-
-.nav-container a {
+/* Style the links inside the navigation bar */
+.topNav a {
+    display: block;
+    float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 40px 16px;
+    padding: 20px 20px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 17px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-div .menacingbeats {
-    font-family: 'Lexend Zetta', sans-serif;
-    font-size: 16px;
-    background: linear-gradient(to right, #1e1e1e 10%, #9d2236 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
-}
-
-/* make menaacingbeats website text slightly bigger */
-nav .nav-container .menacingbeats-com {
-    font-size: 15px;
-}
-
-nav .nav-container img {
-    height: 10px;
-}
-
 /* change color of links on hover */
-.nav-container a:hover {
+.topNav a:hover {
     /* background-color: #ddd; */
     opacity: 0.6;
     transition: 0.3s;
     cursor: pointer;
+    text-decoration-line: underline;
+    background-color: #f2f2f2;
+    color: #444444;
 }
 
 /* add an active class to highlight current page */
 .topNav a.active {
-    background-color: #ddd;
-    color: white;
+    background-color: none;
+    color:red;
+    text-shadow: 1px 1px 1px #760828;
 }
-
 /* Hide the hamburger menu for large screens */
 .topNav .icon {
     display: none;
-}
-
-/* Makes the hamburger menu slightly bigger */
-nav .icon {
     font-size: 17px;
 }
 
-/* NAVBAR SOCIALS */
-nav ul {
-    display: flex;
-    margin-right: 15px;
+.fa-bars {
+    padding: 0px 10px;
 }
-
-nav ul li {
-    list-style-type: none;
-}
-
-nav ul li img {
-    height: 30px;
-    padding: 0 5px;
-}
-
-.social-icons img:hover {
-    /* background-color: #ddd; */
-    opacity: 0.6;
-    transition: 0.3s;
-}
-
 
 /* When the screen is less than 1000px wide, hide all links except hamburger menu */
-@media screen and (max-width: 1000px) {
-    .nav-container a:not(:first-child) {display: none;}
-    .nav-container a.icon {
-        /* display: flex;
-        display: inline-block;
-        align-items: flex-start; */
-        float: left;
+@media screen and (max-width: 600px) {
+    .topNav a:not(:first-child) {display: none;}
+    .topNav a.icon {
+        float: right;
         display: block;
     }
 
@@ -313,27 +264,18 @@ nav ul li img {
 
 
 /* Responsive class added to topnav with Javascript when user clicks. Topnav looks better on small screens (vertically) */
-@media screen and (max-width: 1000px) {
-    .nav-container.responsive {position: relative;}
-    .nav-container.responsive a.icon {
+@media screen and (max-width: 600px) {
+    .topNav.responsive {position: relative;}
+    .topNav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
     }
-
-    html, body {
-        max-width: 100%;    
-        overflow-x: hidden;
-    }
-
-    .nav-container .responsive a {
-        display: block;
-        text-align: left;
+    .topNav.responsive a {
         float: none;
         display: block;
         text-align: left;
     }
-
     .video-container {
         display: flex;
         align-items: center;
@@ -409,13 +351,13 @@ nav ul li img {
 /* Header */
 
 /* scrolling ticker */
-header .t-container {
+.t-container {
     width: 100%;
     overflow: hidden; 
     /* Hide scroll bar */
 }
 
-header .ticker-wrap {
+.ticker-wrap {
     width: 100%;
     padding-left: 100%;
     /* pushes contents to the right side of the screen */
@@ -423,7 +365,10 @@ header .ticker-wrap {
     color: #f2f2f2;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
-    font-size: .8em;
+    font-size: 16px;
+    padding: 20px 0px;
+    border: 1px black;
+    border-style: solid none;
 }
 
 @keyframes ticker {
@@ -434,7 +379,7 @@ header .ticker-wrap {
 .ticker-move {
     display: inline-block;
     white-space: nowrap;
-    padding-right: 100%;
+    padding-left: 100%;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker;
@@ -446,7 +391,7 @@ header .ticker-wrap {
     /* Pause scroll on mouse hover */
 }
 
-header .ticker-item {
+.ticker-item {
     display: inline-block;
     /* lay items in a horiztonal line */
     padding: 0 1rem;
@@ -467,18 +412,23 @@ header .ticker-item {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 
 /* SOTD H1 HEADING */
-.sotd-container h1 {
+.sotd-headline {
     text-transform: uppercase;
-    font-family: 'Orbitron', sans-serif;
-    color: #9d2236;
-    background-color: white;
-    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: red;
+    text-shadow: 2px 2px 4px #9d2236;
+    width: 940px;
     text-align: center;
-    padding: 0 0 0 0px;
-    font-size: 3rem;
+    display: inline-block;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 20px 0px;
 }
 
 .sotd-header {
@@ -557,11 +507,11 @@ header .ticker-item {
 /* FOOTER */
 
 footer {
-    background-color: black;
+    background-color: #444444;
 }
 
 .footer-container {
-    background-color: black;
+    background-color: #444444;
     height: 110px;
     width: 100%;
     display: flex;
@@ -571,9 +521,9 @@ footer {
 }
 
 footer .blurb {
-    background: black;
+    background: #444444;
     display: flex;
-    color: white;
+    color: #f2f2f2;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     margin: 0px 40px;
@@ -585,28 +535,28 @@ footer .all-social-links {
     display: flex;
     flex-wrap: wrap;
     width: 400px;
-    background-color: white;
-    background-color: black;
+    background-color: #f2f2f2;
+    background-color: #444444;
     list-style-type: none;
     padding-top: 30px; 
 }
 
 footer .all-social-links img {
-    background-color: black;
+    background-color: #444444;
     height:40px;
     padding: 0px 5px;
 }
 
 footer ul li {
     display: flex;
-    background-color: black;
+    background-color: #444444;
     list-style-type: none;
-    color: black;
+    color: #444444;
 }
 
 footer a {
     color: white;
-    background: black;
+    background: #444444;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
@@ -614,7 +564,7 @@ footer a {
 
 .footer-right {
     display: flex;
-    background-color: black;
+    background-color: #444444;
     line-height: 150%;
     padding-right: 10px;
 }
@@ -622,7 +572,7 @@ footer a {
 /* Nav links in footer */
 .footer-links {
     display: flex;
-    background-color: black;
+    background-color: #444444;
     flex-direction: column;
     padding: 7px;
 }
