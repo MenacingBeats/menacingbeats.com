@@ -426,7 +426,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     color: red;
     text-shadow: 2px 2px 4px #9d2236;
-    width: 940px;
+    width: 80%;
     text-align: center;
     display: inline-block;
     font-size: 17px;
@@ -455,7 +455,7 @@
         
 
 .mb-review-container {
-    width: 940px;
+    width: 80%;
     height: 265px;
     border: 1px solid red;
     border-top: none;
@@ -490,18 +490,22 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    margin: 60px 0px;
 }
 
 .grid {
-    width: 940px;
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+    border: 1px solid blue;
+
 }
 
 .grid-item {
     width: 300px;
-    height: 300px;
+    height: 600px;
     position: relative;
     text-align: center;
     border: 1px solid red;
@@ -534,19 +538,22 @@
 
 /* FOOTER */
 
-footer {
-    background-color: #444444;
-}
-
 .footer-container {
-    background-color: #444444;
-    height: 110px;
+    border: 1px solid red;
+    height: 400px;
     width: 100%;
     display: flex;
     flex-flow: row;
     flex-direction: row;
     justify-content: space-between;
+    text-decoration-style: none;
 }
+
+/* footer {
+    background-color: #444444;
+}
+
+
 
 footer .blurb {
     background: #444444;
@@ -598,7 +605,7 @@ footer a {
 }
 
 /* Nav links in footer */
-.footer-links {
+/* .footer-links {
     display: flex;
     background-color: #444444;
     flex-direction: column;
@@ -613,7 +620,7 @@ footer img:hover {
 footer .footer-links a:hover {
     opacity: 0.6;
     transition: 0.3s;
-}
+} */ 
 
 
 
