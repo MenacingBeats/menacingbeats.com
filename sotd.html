@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -70,12 +71,45 @@
     <main>
         <!-- Header for SOTD -->
         <article>
-            <div class="sotd-banner">
-                <h1>SOTW</h1>
+            <div class="sotd-container">
+                <div class="sotd-headline">
+                    <h1>SOTD</h1>
+                </div>
             </div>
         </article>
-        <!-- current (TOP) SOTD updated -->
-        <section class="sotd-day-container first-sotd">
+
+        <div class="w3-container">
+
+          <div class="w3-content w3-display-container" style="width: 100%;">
+            <div class="mySlides">
+                    <div class="frames">
+                        <div class="guest">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpiganddan%2F&tabs&width=400&height=70&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="100%" height="70w" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>    
+                            <iframe width="100%" height="529" src="https://www.youtube.com/embed/HIWkXV4L3W8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>       
+                    
+                        <div class="review">
+                        <h2>SELECTOR</h2>
+                        </div>
+                    </div>
+                    
+            </div>
+
+            <img class="mySlides" src="city.jpg" style="width:100%">
+
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                </div>
+          </div>
+
+
+
+        <!-- CONTENT MADE EARLIER WHEN 7 ROWS OF SOTD WERE WIREFRAMED -->
+        <!-- <section class="sotd-day-container first-sotd">
             <div class="sotd-video-box">
                 <iframe width="400px" height="400" src="https://www.youtube.com/embed/GJkuTx1DQzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -87,7 +121,6 @@
                         
                     </div>
         </section>
-        <!-- 48 hours Previous Daty SOTD -->
         <section class="sotd-day-container">
             <div class="sotd-video-box">
                 <iframe width="400" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/841114078&color=%23923053&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -99,7 +132,6 @@
                 
             </div>
         </section>
-        <!-- 72 hours 3 days ago -->
         <section class="sotd-day-container">
             <div class="sotd-video-box">
                 <iframe width="400px" height="400" src="https://www.youtube.com/embed/4fJ4MmqNULw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -111,7 +143,6 @@
 
             </div>
         </section>
-        <!-- 96 hours 4 days ago -->
         <section class="sotd-day-container">
             <div class="sotd-video-box">
                 <iframe src="https://open.spotify.com/embed/track/6NTaOUrQf8tpu13sJUTU4J" width="400px" height="400px" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -123,7 +154,6 @@
 
             </div>
         </section>
-        <!-- 120 hours 5 days ago -->
         <section class="sotd-day-container">
             <div class="sotd-video-box">
                 <iframe width="400" height="400" src="https://www.youtube.com/embed/INQB2t3_rak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -135,7 +165,7 @@
 
             </div>
         </section>
-        <!-- 144 hours ago 6 days ago -->
+
         <section class="sotd-day-container">
             <div class="sotd-video-box">
                 <iframe width="400" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/840400030&color=%23923053&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -157,7 +187,7 @@
             <div class="sotd-selector">
 
             </div>
-        </section>
+        </section> -->
 
     </main>
 
@@ -193,7 +223,35 @@
             </ul>
         </div>
 </footer>
-    <script src="script.js">
+    <script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
     //         let month = new Array();
     //         month[0] = "JAN";
     //         month[1] = "FEB";

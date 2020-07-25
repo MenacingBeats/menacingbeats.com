@@ -737,27 +737,58 @@
 
 
 /* // SOTD PAGE WEEK ARCHIVE */
-article .sotd-banner h1 {
-    text-transform: uppercase;
-    font-family: 'Orbitron', sans-serif;
-    color: #9d2236;
-    background-color: white;
+
+.w3-container {
     width: 100%;
-    text-align: center;
-    font-size: 3rem;
 }
 
-.sotd-day-container {
-    border: 1px solid white;
-    display: flex;
+html .mySlides {
+    display: inline-block;
     flex-direction: row;
     width: 100%;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 20px 20px;
 }
 
-section .sotd-video-box {
+
+html .w3-left, .w3-right, .w3-badge {
+    cursor:pointer;
+    background-color: transparent;
+}
+
+html .w3-badge {
+    height:13px;width:13px;padding:0
+}
+
+
+.frames {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.guest {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.review {
+    border: 1px solid yellow;
+    width: 50%;
+    height: 600x;
+}
+
+html .w3-display-bottommiddle {
+    background-color: transparent;
+}
+
+.w3-left {
+    height: 100%;
+}
+
+/* section .sotd-video-box {
     width: 400px;
     height: auto;
 }
@@ -784,7 +815,7 @@ section .sotd-selector {
     height: 400px;
     width: 400px;
     border: 1px solid yellow;
-}
+} */
 
 
 

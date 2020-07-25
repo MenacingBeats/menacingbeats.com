@@ -67,3 +67,4 @@ document.getElementById("sotd-date").innerHTML = dateTime;
     let sotdMonth = date2;
 
 document.getElementById("month").innerHTML = sotdMonth;
+
