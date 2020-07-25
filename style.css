@@ -8,6 +8,7 @@
 
 /* background color for top nav */
 
+
 .topNav {
     background-color: #202020;
     overflow: hidden;
@@ -28,6 +29,11 @@
     font-family: 'Rajdhani', sans-serif;
     background-color: #202020;
     font-weight: bold;
+}
+
+.topNav .logo-nav img {
+    padding: 0px 0px;
+    height: 60px;
 }
 
 .topNav img {
@@ -82,7 +88,7 @@
 
 
 /* When the screen is less than 1000px wide, hide all links except hamburger menu */
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 850px) {
     .nav-text a:not(:first-child) {display: none;}
     .nav-img a {display: none;}
     .topNav a.icon {
@@ -302,7 +308,7 @@
 
 
 /* Responsive class added to topnav with Javascript when user clicks. Topnav looks better on small screens (vertically) */
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 850px) {
     .topNav.responsive {position: relative;}
     .topNav.responsive a.icon {
     position: absolute;
@@ -313,11 +319,6 @@
         float: none;
         display: block;
         text-align: left;
-    }
-    .video-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .sotd-container {
@@ -440,7 +441,16 @@
 .video-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+        overflow: hidden;
+        height: 145vh;
+        background-image: url(beetroots.png);
+        background-position: center top;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        opacity: 0.8;
 }
 
 .sotd-container {
@@ -464,7 +474,7 @@
     font-size: 17px;
     display: flex;
     justify-content: space-around;
-    border: 1px solid ;
+    border: 1px solid #760828;
     padding: 20px 0px;
 }
 
@@ -489,10 +499,10 @@
 .mb-review-container {
     width: 80%;
     height: 300px;
-    border: 1px solid red;
+    border: 1px solid #760828;
     border-top: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -509,7 +519,7 @@
 .mb-box2 {
     height: 100%;
     width: 400px;
-    border: 1px solid yellow;
+    border: 1px solid #760828;
 }
 
 
@@ -543,18 +553,18 @@
 .grid {
     width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     border: 1px solid blue;
 
 }
 
 .grid-item {
-    width: 300px;
+    width: 33%;
     height: 600px;
     position: relative;
     text-align: center;
-    border: 1px solid red;
+    border: 1px solid #760828;
 }
 
 .grid-item img {
@@ -587,14 +597,7 @@
 /* FOOTER */
 /* FOOTER */
 /* FOOTER */
-/* FOOTER */
-/* FOOTER */
-/* FOOTER */
-/* FOOTER */
-/* FOOTER */
-/* FOOTER */
-/* FOOTER */
-/* FOOTER */
+
 
 
 .footer-container {
