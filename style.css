@@ -915,7 +915,7 @@ input[type=submit]:hover {
 
 .venue-header-container img {
     width: 100%;
-    height: 400px;
+    height: 200px;
     object-fit: cover;
     object-position: 50% 50%
 }
@@ -937,20 +937,67 @@ input[type=submit]:hover {
 
 }
 
+.venues-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .venue-flex-container {
     display: flex;
     flex-wrap: wrap;
-    background-color: #25221e;
+    background-color: #101010;
     justify-content: center;
-    margin-top: 60px;
+    margin: 50px 0px;
+    align-items: center;
+    width: 100%;
 }
 
 .venue-flex-item {
-    background-color: #f2f2f2;
-    width: 300px;
-    height: 300px;
-    margin: 1px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
     text-align: center;
-    font-size: 30px;
+    color: red;
+    text-shadow: 2px 2px 4px #760828;
+    font-family: 'Rajdhani', sans-serif;
+    border-radius: 2px;
+    border: 1px solid red;
+
 }
 
+.venue-flex-item img {
+    height: 100%;
+    max-width: auto;
+    display: block;
+    filter: grayscale();
+    margin-left: 0px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .9s ease-in-out;
+	transition: .9s ease-in-out;
+
+}
+
+.venue-flex-item img:hover {
+    opacity: 1;
+    cursor: pointer;
+    /* transform: scale(1.10);
+    transition: 0.3s; */
+    filter: none;
+}
+
+.venue-flex-item:hover img {
+    margin-left: -60px;
+}
+
+.centered {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+}
