@@ -963,8 +963,6 @@ input[type=submit]:hover {
     color: red;
     text-shadow: 2px 2px 4px #760828;
     font-family: 'Rajdhani', sans-serif;
-    border-radius: 2px;
-    border: 1px solid red;
 
 }
 
