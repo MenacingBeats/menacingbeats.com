@@ -137,7 +137,7 @@ body {
   /* background: url(beetroots.png) repeat left/150%; */
   background-repeat: no-repeat;
   opacity: .8;
-  height: 90vh;
+  height: 80vh;
   text-align: center;
   width: 100%;
   display: flex;
@@ -154,9 +154,6 @@ body {
   mix-blend-mode: lighten;
   text-transform: uppercase; 
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow-x: hidden;
   flex-direction: column;
   height: 40vh;
@@ -164,16 +161,16 @@ body {
 }
 
 .menacingmain {
-    font-size: 20vh;
+    font-size: 15vh;
     font-family: 'Bebas Neue';
     margin: -100px 0px;
+    text-shadow: 1px 1px 2px red;
 }
 
 .wrapper img {
   height: 40vh;
   width: auto;
   background-color: transparent;
-  opacity: 1;
   
 
   animation-name: spin;
