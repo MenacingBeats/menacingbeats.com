@@ -1,13 +1,36 @@
 html {
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 
 * {
     margin: 0;
     padding: 0;
-    background-color: #101010;
+}
 
+body {
+    background: linear-gradient(308deg, #ff0000, #000000, #a40c36);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 60s ease infinite;
+    -moz-animation: AnimationName 60s ease infinite;
+    animation: AnimationName 60s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 15%}
+    50%{background-position:100% 86%}
+    100%{background-position:0% 15%}
 }
 
 ::-webkit-scrollbar {
@@ -109,6 +132,91 @@ html {
     background-color: #202020;
 }
 
+.wrapper {
+  animation: sliding-background 100s linear infinite;
+  /* background: url(beetroots.png) repeat left/150%; */
+  background-repeat: no-repeat;
+  opacity: .8;
+  height: 90vh;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  background-color: transparent;
+  color: transparent;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  mix-blend-mode: lighten;
+  text-transform: uppercase; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  flex-direction: column;
+  height: 40vh;
+  overflow-y: hidden;
+}
+
+.menacingmain {
+    font-size: 20vh;
+    font-family: 'Bebas Neue';
+    margin: -100px 0px;
+}
+
+.wrapper img {
+  height: 40vh;
+  width: auto;
+  background-color: transparent;
+  opacity: 1;
+  
+
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.title:before {
+  color: transparent;
+  content: attr(data-text);
+  margin-left: -.3%;
+  margin-top: -.3%;
+  position: absolute;
+}
+
+@keyframes sliding-background {
+  0%,
+  100% {
+    background-position: 100% 60%;
+  }
+  50% {
+    background-position: 100% 40%;
+  }
+}
+
+
+
+
+
 
 
 /* When the screen is less than 1000px wide, hide all links except hamburger menu */
@@ -149,7 +257,6 @@ html {
     .video-container {
         position: relative;
         overflow: hidden;
-        height: 817px;
         background-image: url(beetroots.png);
         background-position: center top;
         background-attachment: fixed;
@@ -467,14 +574,11 @@ html {
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
-    position: relative;
         overflow: hidden;
-        height: 145vh;
-        background-image: url(beetroots.png);
         background-position: center top;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        opacity: 0.8;
+        margin-top: 100px
 }
 
 .sotd-container {
@@ -1031,133 +1135,3 @@ input[type=submit]:hover {
 
 
 
-
-
-:root {
-  /* Base font size */
-
-  /* Set neon color */
-  --neon-text-color: RED;
-  --neon-border-color: red
-}
-
-
-.flicker {
-    font-size: 13rem;
-    font-weight: 200;
-    font-style: bold;
-    color: #fff;
-    text-transform: uppercase;
-    animation: flicker 1.5s infinite alternate;
-    font-family: 'Bebas Neue', cursive;
-  }
-  
-  .flicker::-moz-selection {
-    background-color: var(--neon-border-color);
-    color: var(--neon-text-color);
-  }
-  
-  .flicker::selection {
-    background-color: var(--neon-border-color);
-    color: var(--neon-text-color);
-  }
-  
-  .flicker:focus {
-    outline: none;
-  }
-  
-  /* Animate neon flicker */
-  @keyframes flicker {
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-      text-shadow: -0.2rem -0.2rem 1rem #fff, 0.2rem 0.2rem 1rem #fff,
-        0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color),
-        0 0 6rem var(--neon-text-color), 0 0 8rem var(--neon-text-color),
-        0 0 10rem var(--neon-text-color);
-  
-      box-shadow: 0 0 0.5rem #fff, inset 0 0 0.5rem #fff,
-        0 0 2rem var(--neon-border-color), inset 0 0 2rem var(--neon-border-color),
-        0 0 4rem var(--neon-border-color), inset 0 0 4rem var(--neon-border-color);
-    }
-  
-    20%,
-    24%,
-    55% {
-      text-shadow: none;
-      box-shadow: none;
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* MENACING BEATS RED WIPE */
-/*   
-  .wrapper1 {
-    text-align: center;
-    height: 30vh;
-    margin: 0;
-    background-color: #101010;
-    font-family: 'Rajdhani', sans-serif;
-    overflow-x: hidden;
-    display: grid;
-    place-items: center;
-  }
-  .wrapper1 h1 {
-    color: #fff;
-    font-size: 200px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: 'Bebas Neue', cursive;
-    background: linear-gradient(to left, #101010, #101010, red);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 10s linear infinite;
-    display: inline-block;
-  }
-  
-  @keyframes textclip {
-    to {
-      background-position: -200% bottom;
-    }
-  } */
