@@ -1,15 +1,18 @@
+
+/* Smooth scroll the call to action clicks */
 html {
     scroll-behavior: smooth;
 }
 
-
+/* Format document to neutral */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Slow changing gradient background */
 body {
-    background: linear-gradient(308deg, #ff0000, #000000, #a40c36);
+    background: linear-gradient(308deg, #bf2a2a, #000000, #c10136);
     background-size: 600% 600%;
 
     -webkit-animation: AnimationName 60s ease infinite;
@@ -17,45 +20,43 @@ body {
     animation: AnimationName 60s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 15%}
-    50%{background-position:100% 86%}
-    100%{background-position:0% 15%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 15%}
-    50%{background-position:100% 86%}
-    100%{background-position:0% 15%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 15%}
-    50%{background-position:100% 86%}
-    100%{background-position:0% 15%}
-}
+                @-webkit-keyframes AnimationName {
+                    0%{background-position:0% 15%}
+                    50%{background-position:100% 86%}
+                    100%{background-position:0% 15%}
+                }
+                @-moz-keyframes AnimationName {
+                    0%{background-position:0% 15%}
+                    50%{background-position:100% 86%}
+                    100%{background-position:0% 15%}
+                }
+                @keyframes AnimationName {
+                    0%{background-position:0% 15%}
+                    50%{background-position:100% 86%}
+                    100%{background-position:0% 15%}
+                }
 
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #101010; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: red; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: grey; 
-  }
+                ::-webkit-scrollbar {
+                    width: 10px;
+                }
+                
+                /* Track */
+                ::-webkit-scrollbar-track {
+                    background: #101010; 
+                }
+                
+                /* Handle */
+                ::-webkit-scrollbar-thumb {
+                    background: #bf2a2a; 
+                }
+                
+                /* Handle on hover */
+                ::-webkit-scrollbar-thumb:hover {
+                    background: grey; 
+                }
 /* NAVBAR */
 
 /* background color for top nav */
-
-
 .topNav {
     background-color: #202020;
     overflow: hidden;
@@ -66,6 +67,7 @@ body {
     float: left;
 }
 
+/* nav link formatting */
 .nav-text a {
     padding: 20px 20px;
     display: block;
@@ -78,18 +80,13 @@ body {
     font-weight: bold;
 }
 
-.topNav .logo-nav img {
-    padding: 0px 0px;
-    height: 60px;
-}
-
+/* top right nav social links */
 .topNav img {
     height: 20px;
     border-radius: 5px;
     text-align: center;
     background-color: #202020;
     padding: 20px;
-    
 }
 
 .nav-img {
@@ -132,89 +129,88 @@ body {
     background-color: #202020;
 }
 
-.wrapper {
-  animation: sliding-background 100s linear infinite;
-  /* background: url(beetroots.png) repeat left/150%; */
-  background-repeat: no-repeat;
-  opacity: .8;
-  height: 80vh;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+/* LANDING PAGE MENACING BEATS + SPINNING BEETROOT */
+                    .wrapper {
+                    animation: sliding-background 100s linear infinite;
+                    /* background: url(beetroots.png) repeat left/150%; */
+                    background-repeat: no-repeat;
+                    opacity: .8;
+                    height: 80vh;
+                    text-align: center;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    }
 
-.title {
-  background-color: transparent;
-  color: transparent;
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  mix-blend-mode: lighten;
-  text-transform: uppercase; 
-  width: 100%;
-  overflow-x: hidden;
-  flex-direction: column;
-  height: 40vh;
-  overflow-y: hidden;
-}
+                    .title {
+                    background-color: transparent;
+                    color: transparent;
+                    font-family: "Montserrat", sans-serif;
+                    margin: 0;
+                    mix-blend-mode: lighten;
+                    text-transform: uppercase; 
+                    width: 100%;
+                    overflow-x: hidden;
+                    flex-direction: column;
+                    height: 40vh;
+                    overflow-y: hidden;
+                    }
 
-.menacingmain {
-    font-size: 15vh;
-    font-family: 'Bebas Neue';
-    margin: -100px 0px;
-    text-shadow: 1px 1px 2px red;
-}
+                    .menacingmain {
+                        color: black;
+                        font-size: 15vh;
+                        font-family: 'Bebas Neue';
+                        margin: -100px 0px;
+                        text-shadow: 1px 1px 2px red;
+                    }
 
-.wrapper img {
-  height: 40vh;
-  width: auto;
-  background-color: transparent;
-  
+                    .wrapper img {
+                    height: 40vh;
+                    width: auto;
+                    background-color: transparent;
+                    
 
-  animation-name: spin;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-  /* transform: rotate(3deg); */
-   /* transform: rotate(0.3rad);/ */
-   /* transform: rotate(3grad); */ 
-   /* transform: rotate(.03turn);  */
-}
+                    animation-name: spin;
+                    animation-duration: 10s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear; 
+                    /* transform: rotate(3deg); */
+                    /* transform: rotate(0.3rad);/ */
+                    /* transform: rotate(3grad); */ 
+                    /* transform: rotate(.03turn);  */
+                    }
 
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
+                    @keyframes spin {
+                        from {
+                            transform:rotate(0deg);
+                        }
+                        to {
+                            transform:rotate(360deg);
+                        }
+                    }
 
-.title:before {
-  color: transparent;
-  content: attr(data-text);
-  margin-left: -.3%;
-  margin-top: -.3%;
-  position: absolute;
-}
+                    .title:before {
+                    color: transparent;
+                    content: attr(data-text);
+                    margin-left: -.3%;
+                    margin-top: -.3%;
+                    position: absolute;
+                    }
 
-@keyframes sliding-background {
-  0%,
-  100% {
-    background-position: 100% 60%;
-  }
-  50% {
-    background-position: 100% 40%;
-  }
-}
-
-
-
-
+                    @keyframes sliding-background {
+                    0%,
+                    100% {
+                        background-position: 100% 60%;
+                    }
+                    50% {
+                        background-position: 100% 40%;
+                    }
+                    }
 
 
+/* RESPONSIVE MOBILE */
 
 /* When the screen is less than 1000px wide, hide all links except hamburger menu */
 @media screen and (max-width: 850px) {
@@ -430,8 +426,6 @@ body {
 
 
 /* END RESPONSIVE DESIGN */
-/* END RESPONSIVE DESIGN */
-/* END RESPONSIVE DESIGN */
 
 
 
@@ -507,65 +501,62 @@ body {
 }
 
 /* END OF TOPNAV REPSONSIVE */
-/* END OF TOPNAV REPSONSIVE */
-/* END OF TOPNAV REPSONSIVE */
 
 
-/* Header */
+            /* scrolling ticker */
+            .t-container {
+                width: 100%;
+                overflow: hidden; 
+            /* Hide scroll bar */
+            }
 
-/* scrolling ticker */
-.t-container {
-    width: 100%;
-    overflow: hidden; 
-/* Hide scroll bar */
-}
+            .ticker-wrap {
+                width: 100%;
+                padding-left: 100%;
+                /* pushes contents to the right side of the screen */
+                background-color: #101010;
+                color: #f2f2f2;
+                text-transform: uppercase;
+                /* font-family: 'Courier New', Courier, monospace; */
+                font-family: arial;
+                font-size: 12px;
+                padding: 20px 0px;
+                border: 1px solid #101010;
+                border-style: solid none;
+            }
 
-.ticker-wrap {
-    width: 100%;
-    padding-left: 100%;
-    /* pushes contents to the right side of the screen */
-    background-color: #101010;
-    color: #f2f2f2;
-    text-transform: uppercase;
-    /* font-family: 'Courier New', Courier, monospace; */
-    font-family: arial;
-    font-size: 12px;
-    padding: 20px 0px;
-    border: 1px solid #101010;
-    border-style: solid none;
-}
+            @keyframes ticker {
+                0% {transform: translate3d(0, 0, 0); }
+                100% { transform: translate3d(-100%, 0, 0);}
+            }
 
-@keyframes ticker {
-    0% {transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-100%, 0, 0);}
-}
+            .ticker-move {
+                display: inline-block;
+                white-space: nowrap;
+                padding-left: 100%;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-name: ticker;
+                animation-duration: 230s;
+                background-color: #101010;
+            }
 
-.ticker-move {
-    display: inline-block;
-    white-space: nowrap;
-    padding-left: 100%;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-name: ticker;
-    animation-duration: 230s;
-    background-color: #101010;
-}
+            .ticker-move:hover {
+                animation-play-state: paused;
+                /* Pause scroll on mouse hover */
+            }
 
-.ticker-move:hover {
-    animation-play-state: paused;
-    /* Pause scroll on mouse hover */
-}
-
-.ticker-item {
-    display: inline-block;
-    /* lay items in a horiztonal line */
-    padding: 0 1rem;
-    background-color: #101010;
-}
+            .ticker-item {
+                display: inline-block;
+                /* lay items in a horiztonal line */
+                padding: 0 1rem;
+                background-color: #101010;
+            }
 
 /* Main */
 
-/* sotd */
+/* SOTD CONTAINER AND REVIEW */
+/* sotd main video container */
 .video-container {
     display: flex;
     align-items: center;
@@ -575,80 +566,88 @@ body {
         background-position: center top;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        margin-top: 100px
+        margin-top: 100px;
 }
 
-.sotd-container {
-    text-align: center;
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
 
-/* SOTD H1 HEADING */
-.sotd-headline {
-    text-transform: uppercase;
-    font-family: 'Rajdhani', sans-serif;
-    color: red;
-    text-shadow: 2px 2px 4px #9d2236;
-    width: 80%;
-    text-align: center;
-    display: inline-block;
-    font-size: 17px;
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid #760828;
-    padding: 20px 0px;
-}
-
-/* <div class="mb-review">
-            <div class="mb-review-container">
-                <div class="mb-box"></div>
-                <div class="mb-box2"></div>
-            </div>
-        </div> */
-
+/* full width review section */
 .mb-review {
-            width: 100%;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            flex-direction: row;
-        }
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
         
-
+/* container holding both boxes of review */
 .mb-review-container {
     width: 80%;
-    height: 300px;
-    border: 1px solid #760828;
-    border-top: none;
+    height: 350px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.mb-box {
-    height: 300px;
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
+/* first box with facebook and socials */
+.mb-box {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    letter-spacing: 20px;
+    margin: 10px 0px;
+}
+
+.sotdred {
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    color: black;
+    text-shadow: 2px 2px 4px red;
+    display: inline-block;
+    font-size: 60px;
+    opacity: .8;
+    width: 100%;
+}
+
+.mb-box img {
+    height: 40px;
+    width: 40px;
+    margin: 0px 5px 0px 5px;
+}
+
+/* second box with review */
 .mb-box2 {
     height: 100%;
-    width: 400px;
-    border: 1px solid #760828;
+    width: 100%;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.review-photo {
+    width: 200px;
+    border: 1px solid red;
+}
 
-#sotd-date {
+.review-photo img {
+    width: 200px;
+}
+
+.review-text {
+    color: red;
+    text-shadow: 2px 2px 4px #760828;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: right;
+    border: 1px solid blue;
+    width: 50%;
+    line-height: 25px;
+}
+
+/* #sotd-date {
     background-color: white;
     font-family: 'Orbitron', sans-serif;;
     font-size: 3rem;
@@ -664,7 +663,7 @@ body {
     font-size: 3rem;
     color: #9d2236;
     font-family: 'Orbitron', sans-serif;
-}
+} */
 
 /* Grid of links */
 .grid-container {
