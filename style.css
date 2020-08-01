@@ -55,7 +55,9 @@ body {
                     background: grey; 
                 }
 /* NAVBAR */
-
+iframe {
+    border-radius: 10px;
+}
 /* background color for top nav */
 .topNav {
     background-color: #202020;
@@ -74,10 +76,9 @@ body {
     float: left;
     color: #f2f2f2;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'Rajdhani', sans-serif;
     background-color: #202020;
-    font-weight: bold;
 }
 
 /* top right nav social links */
@@ -160,10 +161,12 @@ body {
 
                     .menacingmain {
                         color: black;
-                        font-size: 15vh;
+                        font-size: 4vh;
                         font-family: 'Bebas Neue';
-                        margin: -100px 0px;
+                        margin: 0px 0px;
                         text-shadow: 1px 1px 2px red;
+                        letter-spacing: 70px;
+                        text-indent: 80px;
                     }
 
                     .wrapper img {
@@ -173,7 +176,7 @@ body {
                     
 
                     animation-name: spin;
-                    animation-duration: 10s;
+                    animation-duration: 4s;
                     animation-iteration-count: infinite;
                     animation-timing-function: linear; 
                     /* transform: rotate(3deg); */
@@ -622,19 +625,30 @@ body {
 .mb-box2 {
     height: 100%;
     width: 100%;
-    border: 1px solid green;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    background-color: #202020;
+    border-radius: 10px;
 }
 
+/* box holding selector box */
 .review-photo {
     width: 200px;
-    border: 1px solid red;
+    text-align: center;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #202020;
+    height: 100%;
+
 }
 
 .review-photo img {
     width: 200px;
+    border-radius: 150px;
+    padding-top: 20px;
 }
 
 .review-text {
@@ -642,9 +656,17 @@ body {
     text-shadow: 2px 2px 4px #760828;
     font-family: 'Rajdhani', sans-serif;
     text-align: right;
-    border: 1px solid blue;
-    width: 50%;
+    height: 100%;
     line-height: 25px;
+    background-color: #202020;
+    display: flex;
+}
+
+.review-text p {
+    padding: 20px;
+    width: 500px;
+    text-align: left;
+
 }
 
 /* #sotd-date {
