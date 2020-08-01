@@ -233,62 +233,116 @@ iframe {
         overflow-x: hidden;
     }
 
-    iframe {
+    .menacingmain {
+        color: black;
+        font-size: 4vh;
+        font-family: 'Bebas Neue';
+        margin: 0px 0px;
+        text-shadow: 1px 1px 2px red;
+        letter-spacing: 30px;
+        text-indent: 30px;
+    }
+
+    #section-sotd {
         width: 100%;
         height: 210px;
-        display: flex;
-        align-self: flex-end;
-        border-top: 1px solid red;
-    }
-        
-    main .sotd-headline {
-        width: 100%;
-    }
-        
-    .sotd-header {
-        display: flex;
-        justify-content: start;
-    }
-        
-    .video-container {
-        position: relative;
-        overflow: hidden;
-        background-image: url(beetroots.png);
-        background-position: center top;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        opacity: 0.8;
     }
 
-    .mb-review {
+
+    html .mb-review {
         width: 100%;
-        height: 265px;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        flex-direction: row;
+    }
+            
+    /* container holding both boxes of review */
+    .mb-review-container {
+        width: 80%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
-
-    main .mb-review-container {
+    /* first box with facebook and socials */
+    html .mb-box {
+        height: 70px;
         width: 100%;
-        height: 265px;
-        border: 1px solid red;
-        border-top: none;
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
-        flex-direction: row;
+        letter-spacing: 20px;
+        margin: 10px 0px;
     }
-
-    #sotd-date {
-        background-color: white;
+    
+    html .sotdred {
+        text-transform: uppercase;
+        font-family: 'Bebas Neue';
+        color: black;
+        text-shadow: 2px 2px 4px red;
+        display: inline-block;
+        font-size: 60px;
+        opacity: .8;
+        width: 100%;
+    }
+    
+    html .mb-box img {
+        height: 20px;
+        width: auto;
+        margin: 0px 5px 0px 5px;
+    }
+    
+    /* second box with review */
+    html .mb-box2 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #202020;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+    
+    /* box holding selector box */
+    html .review-photo {
+        width: 100%;
+        text-align: center;
+        color: #f2f2f2;
+        text-decoration: none;
+        font-size: 16px;
         font-family: 'Rajdhani', sans-serif;
-        font-size: 1.5em;
-        padding: 0 0px 0 0;
-        color: purple;
+        background-color: #202020;
+        height: 100%;
+    
+    }
+    
+    html .review-photo img {
+        width: 200px;
+        border-radius: 150px;
+        padding-top: 20px;
+    }
+    
+    html .review-text {
+        color: red;
+        text-shadow: 2px 2px 4px #760828;
+        font-family: 'Rajdhani', sans-serif;
+        text-align: right;
+        height: 100%;
+        line-height: 25px;
+        background-color: #202020;
+        display: flex;
+    }
+    
+    html .review-text p {
+        padding: 20px;
+        width: 500px;
+        text-align: left;
+    
     }
 
     /* Grid of links */
