@@ -12,12 +12,105 @@ html {
 
 /* Slow changing gradient background */
 body {
-    background: linear-gradient(308deg, #bf2a2a, #000000, #c10136);
+    background-color: #101010;
+}
+/* NAVBAR */
+
+/* background color for top nav */
+.topNav {
+    background-color: #202020;
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topNav a {
+    display: block;
+    float: left;
+}
+
+/* nav link formatting */
+.nav-text {
+    margin-left: 20px;
+}
+
+.nav-text a {
+    padding: 30px 20px;
+    display: block;
+    float: left;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #202020;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+/* top right nav social links */
+.topNav img {
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #202020;
+    padding: 30px 20px;
+}
+
+.nav-img {
+    float: right;
+    height: 60px;
+    background-color: #202020;
+}
+
+.nav-img a {
+    float: right;
+    height: 20px;
+}
+
+/* change color of links on hover */
+.topNav a:hover {
+    /* background-color: #ddd; */
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration-line: underline;
+    text-shadow: 2px 2px 4px #760828;
+}
+
+/* add an active class to highlight current page */
+.topNav a.active {
+    color: #f2f2f2;
+}
+/* Hide the hamburger menu for large screens */
+.topNav .icon {
+    display: none;
+    font-size: 17px;
+}
+
+.topNav a:not(:first-child) {
+}
+
+.fa-bars {
+    padding: 0px 10px;
+    background-color: #202020;
+}
+
+/* LANDING PAGE MENACING BEATS + SPINNING BEETROOT */
+                    .wrapper {
+                    animation: sliding-background 100s linear infinite;
+                    /* background: url(beetroots.png) repeat left/150%; */
+                    background-repeat: no-repeat;
+                    opacity: .8;
+                    height: 90vh;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    background: linear-gradient(308deg, #202020, #760828, grey, white);
     background-size: 600% 600%;
 
-    -webkit-animation: AnimationName 60s ease infinite;
-    -moz-animation: AnimationName 60s ease infinite;
-    animation: AnimationName 60s ease infinite;
+    -webkit-animation: AnimationName 100s ease infinite;
+    -moz-animation: AnimationName 100s ease infinite;
+    animation: AnimationName 100s ease infinite;
 }
 
                 @-webkit-keyframes AnimationName {
@@ -54,171 +147,60 @@ body {
                 ::-webkit-scrollbar-thumb:hover {
                     background: grey; 
                 }
-/* NAVBAR */
 
-#section-sotd {
-    border-radius: 5px;
-}
+                    .menacingmain{
+                        display: flex;
+                    }
 
-/* background color for top nav */
-.topNav {
-    background-color: #202020;
-    overflow: hidden;
-}
-/* Style the links inside the navigation bar */
-.topNav a {
-    display: block;
-    float: left;
-}
+                    .landing-header h1 {
+                    }
 
-/* nav link formatting */
-.nav-text a {
-    padding: 20px 20px;
-    display: block;
-    float: left;
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Rajdhani', sans-serif;
-    background-color: #202020;
-}
+                    /* MEANCING BEATS WORD */
+                    .landing-header {
+                        color: black;
+                        font-size: 1vh;
+                        font-family: 'Bebas Neue';
+                        margin: 0px 0px;
+                        letter-spacing: 30px;
+                        text-indent: 30px;
+                        writing-mode: vertical-lr;
+                    }
 
-/* top right nav social links */
-.topNav img {
-    height: 20px;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #202020;
-    padding: 20px;
-}
-
-.nav-img {
-    float: right;
-    height: 60px;
-    background-color: #202020;
-}
-
-.nav-img a {
-    float: right;
-    height: 20px;
-}
-
-/* change color of links on hover */
-.topNav a:hover {
-    /* background-color: #ddd; */
-    opacity: 0.6;
-    transition: 0.3s;
-    cursor: pointer;
-    text-decoration-line: underline;
-}
-
-/* add an active class to highlight current page */
-.topNav a.active {
-    color:red;
-    text-shadow: 2px 2px 4px #760828;
-}
-/* Hide the hamburger menu for large screens */
-.topNav .icon {
-    display: none;
-    font-size: 17px;
-}
-
-.topNav a:not(:first-child) {
-    text-shadow: 2px 2px 4px #760828;
-}
-
-.fa-bars {
-    padding: 0px 10px;
-    background-color: #202020;
-}
-
-/* LANDING PAGE MENACING BEATS + SPINNING BEETROOT */
-                    .wrapper {
-                    animation: sliding-background 100s linear infinite;
-                    /* background: url(beetroots.png) repeat left/150%; */
-                    background-repeat: no-repeat;
-                    opacity: .8;
-                    height: 80vh;
-                    text-align: center;
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
+                    .landing-header li {
+                        list-style-type: none;
+                    }
+                    .landing-header ul {
+                        width: 850px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        margin: 50px 0px 0px 0px;
                     }
 
                     .title {
                     background-color: transparent;
-                    color: transparent;
-                    font-family: "Montserrat", sans-serif;
-                    margin: 0;
-                    mix-blend-mode: lighten;
-                    text-transform: uppercase; 
-                    width: 100%;
-                    overflow-x: hidden;
-                    flex-direction: column;
-                    height: 40vh;
-                    overflow-y: hidden;
+                    mix-blend-mode: darken;
                     }
 
-                    .menacingmain {
+                    .menacingmain1 {
+                        transform: rotate(180deg);
+                    }
+
+                    .take-me-to {
                         color: black;
-                        font-size: 4vh;
                         font-family: 'Bebas Neue';
                         margin: 0px 0px;
-                        text-shadow: 2px 2px 8px red;
-                        letter-spacing: 70px;
-                        text-indent: 80px;
-                    }
-
-                    .wrapper img {
-                    height: 40vh;
-                    width: auto;
-                    background-color: transparent;
-                    
-
-                    animation-name: spin;
-                    animation-duration: 4s;
-                    animation-iteration-count: infinite;
-                    animation-timing-function: linear; 
-                    /* transform: rotate(3deg); */
-                    /* transform: rotate(0.3rad);/ */
-                    /* transform: rotate(3grad); */ 
-                    /* transform: rotate(.03turn);  */
-                    }
-
-                    @keyframes spin {
-                        from {
-                            transform:rotate(0deg);
-                        }
-                        to {
-                            transform:rotate(360deg);
-                        }
-                    }
-
-                    .title:before {
-                    color: transparent;
-                    content: attr(data-text);
-                    margin-left: -.3%;
-                    margin-top: -.3%;
-                    position: absolute;
-                    }
-
-                    @keyframes sliding-background {
-                    0%,
-                    100% {
-                        background-position: 100% 60%;
-                    }
-                    50% {
-                        background-position: 100% 40%;
-                    }
+                        letter-spacing: 30px;
+                        width: 100%;
+                        text-align: center;
                     }
 
 
 /* RESPONSIVE MOBILE */
 
 /* When the screen is less than 1000px wide, hide all links except hamburger menu */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .nav-text a:not(:first-child) {display: none;}
     .nav-img a {display: none;}
     .topNav a.icon {
@@ -489,7 +471,7 @@ body {
 
 
 /* Responsive class added to topnav with Javascript when user clicks. Topnav looks better on small screens (vertically) */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .topNav.responsive {position: relative;}
     .topNav.responsive a.icon {
     position: absolute;
@@ -573,14 +555,14 @@ body {
                 width: 100%;
                 padding-left: 100%;
                 /* pushes contents to the right side of the screen */
-                background-color: #101010;
+                background-color: #202020;
                 color: #f2f2f2;
                 text-transform: uppercase;
                 /* font-family: 'Courier New', Courier, monospace; */
                 font-family: arial;
                 font-size: 12px;
-                padding: 20px 0px;
-                border: 1px solid #101010;
+                padding: 10px 0px;
+                border: 1px solid #202020;
                 border-style: solid none;
             }
 
@@ -597,7 +579,7 @@ body {
                 animation-timing-function: linear;
                 animation-name: ticker;
                 animation-duration: 230s;
-                background-color: #101010;
+                background-color: #202020;
             }
 
             .ticker-move:hover {
@@ -609,7 +591,7 @@ body {
                 display: inline-block;
                 /* lay items in a horiztonal line */
                 padding: 0 1rem;
-                background-color: #101010;
+                background-color: #202020;
             }
 
 /* Main */
@@ -822,7 +804,7 @@ body {
 }
 
 .blurb {
-    color:red;
+    color:rgb(192, 0, 0);
     text-shadow: 2px 2px 4px #760828;
     font-family: 'Rajdhani', sans-serif;
     width: 400px;
@@ -839,7 +821,7 @@ body {
 
 .center-socials h2 {
     background-color: black;
-    color:red;
+    color:rgb(192, 0, 0);
     text-shadow: 2px 2px 4px #760828;
     font-family: 'Rajdhani', sans-serif;
 }
