@@ -93,6 +93,14 @@ body {
     background-color: #202020;
 }
 
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* LANDING PAGE MENACING BEATS + SPINNING BEETROOT */
                     .wrapper {
                     animation: sliding-background 100s linear infinite;
@@ -100,11 +108,10 @@ body {
                     background-repeat: no-repeat;
                     opacity: .8;
                     height: 90vh;
-                    width: 100%;
+                    width: 1000px;
                     display: flex;
                     justify-content: center;
                     flex-wrap: wrap;
-
                     background: linear-gradient(308deg, #202020, #760828, grey, white);
     background-size: 600% 600%;
 
@@ -140,7 +147,7 @@ body {
                 
                 /* Handle */
                 ::-webkit-scrollbar-thumb {
-                    background: #bf2a2a; 
+                    background: #f2f2f2
                 }
                 
                 /* Handle on hover */
@@ -158,11 +165,11 @@ body {
                     /* MEANCING BEATS WORD */
                     .landing-header {
                         color: black;
-                        font-size: 1vh;
+                        font-size: 8px;
                         font-family: 'Bebas Neue';
                         margin: 0px 0px;
-                        letter-spacing: 30px;
-                        text-indent: 30px;
+                        letter-spacing: 18px;
+                        text-indent: 16px;
                         writing-mode: vertical-lr;
                     }
 
@@ -170,12 +177,11 @@ body {
                         list-style-type: none;
                     }
                     .landing-header ul {
-                        width: 850px;
+                        width: 900px;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        align-items: flex-start;
-                        margin: 50px 0px 0px 0px;
+                        align-items: center;
                     }
 
                     .title {
@@ -194,6 +200,46 @@ body {
                         letter-spacing: 30px;
                         width: 100%;
                         text-align: center;
+                        font-size: 12px;
+                    }
+
+                    .sotd-container {
+                        display: flex;
+                    }
+
+                    .sotd-socials {
+                        display: flex;
+                    }
+
+                    .sotd-small-socials {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly
+                        border: 1px solid yellow;
+                        align-items: center;
+                    }
+
+                    #sotd-header {
+                        color: black;
+                        font-size: 20px;
+                        font-family: 'Bebas Neue';
+                        writing-mode: horizontal-tb;
+                        width: 500px;
+                        letter-spacing: 0px;
+                        text-indent: 0px;
+                        padding: 40px 0px;
+                    }
+
+                    .sotd-review-box p {
+                        color: black;
+                        font-size: 16px;
+                        font-family: 'Bebas Neue';
+                        writing-mode: horizontal-tb;
+                        width: 500px;
+                        letter-spacing: 0px;
+                        text-indent: 0px;
+                        text-align: justify;
+                        line-height: 30px;
                     }
 
 
@@ -232,128 +278,6 @@ body {
         height: 210px;
     }
 
-
-    html .mb-review {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-            
-    /* container holding both boxes of review */
-    .mb-review-container {
-        width: 80%;
-        height: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    /* first box with facebook and socials */
-    html .mb-box {
-        height: 70px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        letter-spacing: 20px;
-        margin: 10px 0px;
-    }
-    
-    html .sotdred {
-        text-transform: uppercase;
-        font-family: 'Bebas Neue';
-        color: black;
-        text-shadow: 2px 2px 4px red;
-        display: inline-block;
-        font-size: 60px;
-        opacity: .8;
-        width: 100%;
-    }
-    
-    html .mb-box img {
-        height: 20px;
-        width: auto;
-        margin: 0px 5px 0px 5px;
-    }
-    
-    /* second box with review */
-    html .mb-box2 {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: #202020;
-        border-radius: 5px;
-        flex-direction: column;
-    }
-    
-    /* box holding selector box */
-    html .review-photo {
-        width: 100%;
-        text-align: center;
-        color: #f2f2f2;
-        text-decoration: none;
-        font-size: 16px;
-        font-family: 'Rajdhani', sans-serif;
-        background-color: #202020;
-        height: 100%;
-    
-    }
-    
-    html .review-photo img {
-        width: 200px;
-        border-radius: 150px;
-        padding-top: 20px;
-    }
-    
-    html .review-text {
-        color: red;
-        text-shadow: 2px 2px 4px #760828;
-        font-family: 'Rajdhani', sans-serif;
-        text-align: right;
-        height: 100%;
-        line-height: 25px;
-        background-color: #202020;
-        display: flex;
-    }
-    
-    html .review-text p {
-        padding: 20px;
-        width: 500px;
-        text-align: left;
-    
-    }
-
-    /* Grid of links */
-    html .grid-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0px;
-    }
-
-    html .grid {
-        width: 375px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    html .grid img {
-        width: 375px;
-    }
-
-    html .grid-item {
-        width: 375px;
-        height: 375px;
-        padding: 0px;
-        text-align: center;
-    }
     
     /* MOBILE FOOTER */
 
@@ -490,17 +414,6 @@ body {
         font-size: 1em;
     }
 
-    html .sotd-container h1 {
-        text-transform: uppercase;
-        font-family: 'Orbitron', sans-serif;
-        color: #9d2236;;
-        background-color: white;
-        width: 549.75px;
-        text-align: left;
-        padding: 0 0 0 0px;
-        font-size: 2rem;
-    }
-
     .sotd-header {
         display: flex;
         justify-content: start;
@@ -555,14 +468,14 @@ body {
                 width: 100%;
                 padding-left: 100%;
                 /* pushes contents to the right side of the screen */
-                background-color: #202020;
+                background-color: #101010;
                 color: #f2f2f2;
                 text-transform: uppercase;
                 /* font-family: 'Courier New', Courier, monospace; */
                 font-family: arial;
                 font-size: 12px;
                 padding: 10px 0px;
-                border: 1px solid #202020;
+                border: 1px solid #101010;
                 border-style: solid none;
             }
 
@@ -579,7 +492,7 @@ body {
                 animation-timing-function: linear;
                 animation-name: ticker;
                 animation-duration: 230s;
-                background-color: #202020;
+                background-color: #101010;
             }
 
             .ticker-move:hover {
@@ -591,7 +504,7 @@ body {
                 display: inline-block;
                 /* lay items in a horiztonal line */
                 padding: 0 1rem;
-                background-color: #202020;
+                background-color: #101010;
             }
 
 /* Main */
@@ -607,132 +520,11 @@ body {
         background-position: center top;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        margin-top: 100px;
 }
 
 
 /* full width review section */
-.mb-review {
-    width: 100%;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-        
-/* container holding both boxes of review */
-.mb-review-container {
-    width: 80%;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0px;
-}
 
-/* first box with facebook and socials */
-.mb-box {
-    height: 120px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    letter-spacing: 20px;
-    margin: 40px 0px
-}
-
-.sotdred {
-    text-transform: uppercase;
-    font-family: 'Bebas Neue';
-    color: black;
-    text-shadow: 2px 2px 4px red;
-    display: inline-block;
-    font-size: 4vh;
-    opacity: .8;
-    width: 100%;
-    padding: 0px 20px;
-}
-
-/* social images in sotd box */
-.sotd-socials img {
-    height: 40px;
-    width: 40px;
-    margin: 0px 5px 0px 5px;
-}
-
-.mb-box img:hover {
-    height: 40px;
-    width: 40px;
-    margin: 0px 5px 0px 5px;
-    opacity: 0.6;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-/* second box with review */
-.mb-box2 {
-    height: 100%;
-    width: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #202020;
-    border-radius: 5px;
-}
-
-/* box holding selector box */
-.review-photo {
-    width: 200px;
-    text-align: center;
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Rajdhani', sans-serif;
-    height: 100%;
-}
-
-.review-photo img {
-    width: 200px;
-    border-radius: 150px;
-    padding-top: 20px;
-}
-
-.review-text {
-    color: #f2f2f2;
-    text-shadow: 2px 2px 4px #760828;
-    font-family: 'Rajdhani', sans-serif;
-    height: 100%;
-    line-height: 25px;
-    display: flex;
-}
-
-.review-text p {
-    padding: 20px;
-    width: 500px;
-    text-align: justify;
-
-}
-
-/* #sotd-date {
-    background-color: white;
-    font-family: 'Orbitron', sans-serif;;
-    font-size: 3rem;
-    padding: 0 0 0 0;
-    color: #9d2236;
-}
-
-#countdown {
-    color: black;
-    display: flex;
-    justify-content: flex-end;
-    background: white;
-    font-size: 3rem;
-    color: #9d2236;
-    font-family: 'Orbitron', sans-serif;
-} */
 
 /* Grid of links */
 .grid-container {
