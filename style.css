@@ -107,7 +107,7 @@ main {
                         display: flex;
                         justify-content: center;
                      flex-wrap: wrap;
-                     height: 100vh;
+                     height: 111vh;
                     }
 
                     .wrapper {
@@ -468,15 +468,25 @@ main {
 
 }
 
+.grid-first-item {
+    background-image: url("gifwhite.gif");
+    background-repeat: repeat;
+    background-size: 30px 30px;
+    height: 210px;
+    width: 385px;
+    padding: 20px 0px;
+    margin: 20px 0px;
+}
+
 .grid-item {
     width: 33.33%;
-    height: 400px;
+    height: 200px;
     position: relative;
     text-align: center;
 }
 
 .grid-item img {
-    height: 360px;
+    height: 250px;
     width: 380px;
     object-fit: cover;
     padding: 20px 0px;
@@ -502,6 +512,13 @@ main {
     font-weight: 900;
     background-color: transparent;
     text-shadow: 1px 1px grey;
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #202020; color: #f2f2f2;
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
 }
 
 .box-buttons {
@@ -554,7 +571,7 @@ main {
 
 .center-socials h2 {
     background-color: #202020;
-    color:rgb(192, 0, 0);
+    color:#f2f2f2;
     text-shadow: 2px 2px 4px #760828;
     font-family: 'Rajdhani', sans-serif;
 }
@@ -566,7 +583,7 @@ main {
 }
 
 .center-socials h4, h2 {
-    margin-left: 32px;
+    margin-left: 8px;
 }
 
 .center-socials li {
@@ -586,8 +603,8 @@ main {
 
 
 .all-social-links img {
-    height: 70px;
-    padding: 0px 5px;
+    height: 50px;
+    padding: 20px 10px;
     background-color:#202020;
 }
 
@@ -770,7 +787,6 @@ input[type=submit]:hover {
     font-size: 34px;
     font-family: 'Rajdhani', sans-serif;
     background-color: transparent;
-
 }
 
 .venues-box {
@@ -796,10 +812,8 @@ input[type=submit]:hover {
     overflow: hidden;
     position: relative;
     text-align: center;
-    color: red;
-    text-shadow: 2px 2px 4px #760828;
+    color: #f2f2f2;
     font-family: 'Rajdhani', sans-serif;
-
 }
 
 .venue-flex-item img {
@@ -831,15 +845,25 @@ input[type=submit]:hover {
     position: absolute;
     top: 20px;
     left: 0px;
-    background-color: transparent;
     font-size: 16px;
     font-weight: bold;
+    background-color: black; color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 
+iframe {
+    overflow: hidden;
+    margin-left: 0px; 
+    margin-top: -220px;
+    margin-bottom: 0px;
+    height: 135vh;
+}
 
-
-
-
-
+.landing-header {
+    overflow: hidden;
+    max-width: 1200px;
+}
 
