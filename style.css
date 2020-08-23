@@ -20,6 +20,9 @@ body {
 .topNav {
     background-color: #202020;
     overflow: hidden;
+    text-align: center;
+    margin: auto;
+    width: 1200px;
 }
 /* Style the links inside the navigation bar */
 .topNav a {
@@ -396,7 +399,8 @@ main {
 
             /* scrolling ticker */
             .t-container {
-                width: 100%;
+                margin: auto;
+                width: 1200px;
                 overflow: hidden; 
             /* Hide scroll bar */
             }
