@@ -154,6 +154,14 @@ main {
         display: block;
     }
 
+    .topNav {
+        background-color: #202020;
+        overflow: hidden;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
     html .ticker-wrap {
         display: none
     }    
@@ -163,16 +171,124 @@ main {
         overflow-x: hidden;
     }
 
-    .menacingmain {
-        color: black;
-        font-size: 4vh;
-        font-family: 'Bebas Neue';
-        margin: 0px 0px;
-        text-shadow: 1px 1px 2px red;
-        letter-spacing: 30px;
-        text-indent: 30px;
+
+    .wrapper2, .wrapper3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+     flex-wrap: wrap;
+     height: 100vh;
     }
+
+    .wrapper {
+    width: 100%;
+    height: 100vh;
+    }
+
+.mySlides {
+    display:none;
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.mySlides img {
+    display:none;
+    object-fit: contain;
+}
   
+
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+html .grid-first-item {
+    background-image: url("gifwhite.gif");
+    background-repeat: repeat;
+    background-size: 30px 30px;
+    height: 200px;
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+html .grid-item {
+    height: 200px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+html .grid-item img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    padding: 0px 0px;
+}
+
+/* .grid-text:hover {
+    opacity: 0.9;
+    transition: .5s;
+    cursor: pointer;
+    transform: scale(1.1);
+    transform: translate(-50%, -55%);
+} */
+
+.grid-text {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#f2f2f2;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: transparent;
+    text-shadow: 1px 1px grey;
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #202020; color: #f2f2f2;
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.box-buttons {
+    background-color: black; color: #f2f2f2;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+
+.box-buttons:hover {
+    background-color: #e7e7e7; color: black;
+    border: none;
+    padding: 10px;
+    transition: .5s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+.box-buttons a:visited {
+    color: #f2f2f2;
+}
+
+
+
+
     /* MOBILE FOOTER */
 
     .footer-container {
@@ -212,6 +328,7 @@ main {
     
     .center-socials h4, h2 {
         margin-left: 32px;
+        text-align: center;
     }
     
     .center-socials li {
@@ -220,20 +337,21 @@ main {
     
     .all-social-links {
         display: flex;
-        background-color: black;
+        background-color: #202020;
+        justify-content: center;
     }
     
     .all-social-links a {
         display: flex;
-        background-color: black;
+        background-color: #202020;
     }
     
     
     
     footer .all-social-links img {
-        height: 70px;
-        padding: 0px 5px;
-        background-color: black;
+        height: 30px;
+        padding: 10px 10px;
+        background-color: #202020;
     }
     
     .all-social-links img:hover {
@@ -247,7 +365,7 @@ main {
         width: 100%;
         display: inline-block;
         text-align: center;
-        background-color: black;
+        background-color: #202020;
     }
     
     footer .footer-bottom-list li {
@@ -256,16 +374,16 @@ main {
         color: #f2f2f2;
         font-family: 'Rajdhani', sans-serif;
         padding: 5px 5px;
-        background-color: black;
+        background-color: #202020;
     
     }
     
     .footer-bottom-list {
-        background-color: black;
+        background-color: #202020;
     }
     
     .footer-bottom-list a {
-        background-color: black;
+        background-color: #202020;
     }
     
     .footer-bottom-list a:visited, a:link {
@@ -280,6 +398,9 @@ main {
         cursor: pointer;
         text-decoration-line: underline;
     }
+
+
+
 
 }
 
@@ -302,96 +423,14 @@ main {
         text-align: left;
     }
 
-    /* RESPONSIVE LOGO */
-                    html .nav-text a {
-                        padding: 20px 0px;
-                    }
-
-                    html .wrapper {
-                        opacity: .8;
-                        height: 90vh;
-                        width: 100%;
-                        display: flex;
-                    }
-
-                    .title img {
-                        background-color: transparent;
-                        mix-blend-mode: darken;
-                        height: 250px;
-                        }
-
-                         /* MEANCING BEATS WORD */
-                    .landing-header {
-                        color: black;
-                        font-size: 6px;
-                        font-family: 'Bebas Neue';
-                        margin: 0px 0px;
-                        letter-spacing: 12px;
-                        text-indent: 15px;
-                        writing-mode: vertical-lr;
-                    }
-
-                    .landing-header li {
-                        list-style-type: none;
-                    }
-                    .landing-header ul {
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-start;
-                        align-items: center;
-                    }
-
-                    .take-me-to {
-                        color: black;
-                        font-family: 'Bebas Neue';
-                        margin: 40px 0px 0px 0px;
-                        letter-spacing: 30px;
-                        width: 100%;
-                        text-align: center;
-                        font-size: 12px;
-                    }
-
-                    iframe {
-                        width: 100%;
-                    }
-
-                    .video-container {
-                        width: 100%;
-                    }
-
-                    .sotd-container {
-                        display: flex;
-                        width: 375px;
-                    }
-
-                    
-
-    /* Grid of links */
-    html .grid-container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0px;
+    iframe {
+        display: none;
     }
-
-    html .grid {
-        width: 375px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+    
+    .landing-header {
+        max-width: 100%;
     }
-
-    html .grid img {
-        width: 375px;
-    }
-
-    html .grid-item {
-        width: 375px;
-        height: 375px;
-        padding: 0px;
-        text-align: center;
-    }
+                
 }
 
 /* END OF TOPNAV REPSONSIVE */
