@@ -17,6 +17,7 @@
     Soon you will eat." />
 
     <title>MENACINGBEATS.COM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="android-chrome-512x512.png" type="">
     <link rel="stylesheet" href="style.css">
@@ -39,12 +40,12 @@
 <!-- Navbar -->
         <div class="topNav" id="myTopNav">
             <div class="nav-text">
-                <a href="index.html" class="active">HOME</a>
-                <a href="sotd.html">SOTD</a>
-                <a href="liveguide.html">LIVE TECHNO</a>
-                <a href="melbourne.html">VENUE GUIDE</a>
-                <a href="about.html">ABOUT US</a>
-                <a href="contact.html">CONTACT</a>
+                <a href="index.html" class="active"><img class="nav-logo" src="trans.png" alt=""></a>
+                <a class="links-only" href="sotd.html">SOTD</a>
+                <a class="links-only" href="liveguide.html">LIVE TECHNO</a>
+                <a class="links-only" href="melbourne.html">VENUE GUIDE</a>
+                <a class="links-only" href="about.html">ABOUT</a>
+                <a class="links-only" href="contact.html">CONTACT</a>
 
                     <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                         <i class="fa fa-bars"></i></a>
@@ -107,14 +108,46 @@
         
         <div class="wrapper">         
 
-            <div class="w3-content w3-section" style="max-width:1200px">
-                <img class="mySlides w3-animate-right" src="widelogo.jpg" style="width:100%">
-                <img class="mySlides w3-animate-right" src="beetport.jpg" style="width:100%">
-                <img class="mySlides w3-animate-right" src="gerd.jpg" style="width:100%">
-                <img class="mySlides w3-animate-right" src="lens.jpg" style="width:100%">
+            <div class="w3-content w3-section">
+                <img class="mySlides w3-animate-right" src="widelogo.jpg">
+                <img class="mySlides w3-animate-right" src="beetport.jpg">
+                <img class="mySlides w3-animate-right" src="rainbow.jpg">
+                <img class="mySlides w3-animate-right" src="save.png">
               </div>
 
-              <section class="grid-container">
+              <div class="card-group">
+                <div class="card">
+                    <video loop class="card-img-top" width="100%" height="auto" autoplay="autoplay">
+                        <source src="vinyl.mp4" type="video/mp4" />
+                      </video>
+                  <div class="card-body">
+                    <h5 class="card-title">SOTD</h5>
+                    <p class="card-text">Techno selected daily</p>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="que.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">THE MELBOURNE SCENE</h5>
+                    <p class="card-text">Find stages and clubs in Melbourne, a guide to the cities nightlife</p>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                  </div>
+                </div>
+                <div class="card">
+                    <video loop class="card-img-top" width="100%" height="auto" autoplay="autoplay">
+                        <source src="darkdance.mp4" type="video/mp4" />
+                      </video>
+                  <div class="card-body">
+                    <h5 class="card-title">LIVE TECHNO</h5>
+                    <p class="card-text">Find streams and upcoming events of your favourite artists</p>
+                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- <section class="grid-container">
                 <div class="grid">
                     <div class="grid-item">
                         <p class="grid-first-item"></p>
@@ -139,15 +172,15 @@
                 </div>
             </section>
         </div>
-        </section>
+        </section> -->
 
        
-        <div class="wrapper2" id="wrapper2">
+        <!-- <div class="wrapper2" id="wrapper2">
             <div class="landing-header"> 
                         <iframe src="https://sotdmenacingbeats.wordpress.com/" frameborder="0" width="1200px" height="850px" scrolling="no"></iframe>
 
              </div>
-          </div>
+          </div> -->
 
     </main>
 
@@ -184,7 +217,11 @@
             </ul>
         </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="slider-script.js"></script>
+
 </body>
 </html>

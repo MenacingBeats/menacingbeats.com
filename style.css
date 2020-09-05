@@ -16,13 +16,14 @@ body {
 }
 /* NAVBAR */
 
+
 /* background color for top nav */
 .topNav {
     background-color: #202020;
     overflow: hidden;
     text-align: center;
     margin: auto;
-    width: 1200px;
+    width: 100%;
 }
 /* Style the links inside the navigation bar */
 .topNav a {
@@ -31,11 +32,22 @@ body {
 }
 
 /* nav link formatting */
-.nav-text {
-    margin-left: 20px;
+
+
+a.icon {
+    padding: 30px 20px;
+    display: block;
+    float: left;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #202020;
+    font-weight: 900;
+    letter-spacing: 3px;
 }
 
-.nav-text a {
+.links-only {
     padding: 30px 20px;
     display: block;
     float: left;
@@ -49,23 +61,24 @@ body {
 }
 
 /* top right nav social links */
-.topNav img {
+.nav-img img {
     height: 20px;
     border-radius: 5px;
     text-align: center;
     background-color: #202020;
-    padding: 30px 20px;
+    padding: 0px 10px;
 }
 
 .nav-img {
     float: right;
-    height: 60px;
+    height: 80px;
     background-color: #202020;
 }
 
 .nav-img a {
     float: right;
-    height: 20px;
+    height: 80px;
+    padding: 20px 10px;
 }
 
 /* change color of links on hover */
@@ -94,6 +107,22 @@ body {
     background-color: #202020;
 }
 
+
+.active {
+    height: 78px;
+    width: 78px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.active img {
+    height: 48px;
+    margin-top: 10px;
+}
+
 main {
     display: flex;
     flex-wrap: nowrap;
@@ -118,14 +147,14 @@ main {
                     }
 
                 .w3-content {
-                    max-width: 1200px;
+                    width: 100%;
                 }
 
                 .mySlides {
                     display:none;
                     height: 500px;
                     object-fit: cover;
-                    width: 1000px;
+                    width: 100%;
                 }
                 
                 .mySlides img {
@@ -200,7 +229,7 @@ main {
 
 .grid-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -208,7 +237,7 @@ main {
 .grid {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -286,7 +315,9 @@ html .grid-item img {
     color: #f2f2f2;
 }
 
-
+.card-text {
+    color: ;
+}
 
 
     /* MOBILE FOOTER */
@@ -422,10 +453,6 @@ html .grid-item img {
         display: block;
         text-align: left;
     }
-
-    iframe {
-        display: none;
-    }
     
     .landing-header {
         max-width: 100%;
@@ -439,7 +466,7 @@ html .grid-item img {
             /* scrolling ticker */
             .t-container {
                 margin: auto;
-                width: 1200px;
+                width: 100%;
                 overflow: hidden; 
             /* Hide scroll bar */
             }
@@ -497,14 +524,14 @@ html .grid-item img {
 /* Grid of links */
 .grid-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     height: 48vh;
 }
 
 .grid {
-    width: 100%;
+    width: 1200px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -920,13 +947,6 @@ input[type=submit]:hover {
 }
 
 
-iframe {
-    overflow: hidden;
-    margin-left: 0px; 
-    margin-top: -220px;
-    margin-bottom: 0px;
-    height: 135vh;
-}
 
 .landing-header {
     overflow: hidden;
