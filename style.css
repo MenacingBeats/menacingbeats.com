@@ -53,7 +53,7 @@ a.icon {
     float: left;
     color: #f2f2f2;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Rajdhani', sans-serif;
     background-color: #202020;
     font-weight: 900;
@@ -62,11 +62,15 @@ a.icon {
 
 /* top right nav social links */
 .nav-img img {
-    height: 20px;
+    height: 30px;
     border-radius: 5px;
     text-align: center;
     background-color: #202020;
     padding: 0px 10px;
+}
+
+#soundcloud-size {
+    height: 40px;
 }
 
 .nav-img {
@@ -677,8 +681,8 @@ html .grid-item img {
 
 
 
-.all-social-links img {
-    height: 50px;
+footer .all-social-links img {
+    height: 80px;
     padding: 20px 10px;
     background-color:#202020;
 }
