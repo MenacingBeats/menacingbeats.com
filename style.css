@@ -157,9 +157,9 @@ DROPDOWN MENU IN NAV */
   }
   
   /* Add a red background color to navbar links on hover */
-  .topNav a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
+  /* .topNav a:hover, .dropdown:hover .dropbtn {
+    background-color: #9d2236;
+  } */
   
   /* Dropdown content (hidden by default) */
   .dropdown-content {
