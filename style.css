@@ -1098,10 +1098,3 @@ input[type=submit]:hover {
 .about-item h2, h3 {
     text-align: center;
 }
-
-.about-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-}
