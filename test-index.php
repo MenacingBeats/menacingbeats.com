@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#101010" />
-    <meta property="og:image" content="https://menacingbeats.github.io/menacingbeats.com/beetroots.png" />
+    <meta property="og:image" content="favicon-menacing-beats.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://menacingbeats.github.io/menacingbeats.com/"/>
     <meta property="og:title" content="MENACING BEATS" />
@@ -19,6 +19,7 @@
     Soon you will eat." />
 
     <title>MENACINGBEATS.COM</title>
+	<link rel="shortcut icon" type="image/png" href=”favicon-menacing-beats.png”/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="android-chrome-512x512.png" type="">
