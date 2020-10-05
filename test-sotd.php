@@ -1,5 +1,5 @@
 <!-- Wordpress API -->
-<?php define('WP_USE_THEMES' , false); require('./content/wp-blog-header.php' ); ?>
+<?php define('WP_USE_THEMES' , false); require('/home2/thesamp9/public_html/content/wp-blog-header.php' ); ?>
 
 <html>
 	<head>
