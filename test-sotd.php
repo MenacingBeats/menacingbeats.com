@@ -1,38 +1,28 @@
-<!-- Wordpress API -->
-<?php define('WP_USE_THEMES' , false); require('/home2/thesamp9/public_html/content/wp-blog-header.php' ); ?>
+<?php /* Wordpress API */ define('WP_USE_THEMES' , false); require('/home2/thesamp9/public_html/content/wp-blog-header.php' ); ?>
 
 <html>
 	<head>
-		<title> SOTD Test </title>
+		<title>Test SOTD</title>
 	</head>
 	<body>
-		<!-- Start loop for category 2 'SOTD' -->
-		<?php $query = new WP_Query( 'cat=2&posts_per_page=1' ); ?>
+		<?php /* Start loop for category 2 'SOTD' */ $query = new WP_Query( 'cat=2&posts_per_page=1' ); ?>
 		<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 		
 		<div class="post">
-			<!-- Display the post title -->
-			<h2><?php the_title(); ?></h2>
+			<h2><?php /* Display the post title */ the_title(); ?></h2>
 			
-			<!-- Display the post content -->
-			<div class="entry"><?php the_content(); ?></div>
+			<div class="entry"><?php /* Display the post content */ the_content(); ?></div>
 			
-			<!-- Display the category <p class="postmetadata"><?php esc_html_e( 'Posted in ' ); ?><?php the_category( ', ' ); ?></p>-->
+			<p><small><?php /* Display the tags */ the_tags(); ?></small></p>
 			
-			<!-- Display the tags -->
-			<p><small><?php the_tags(); ?></small></p>
-			
-			<!-- Display the artist's socials -->
 			<p>Artist Facebook: 
-			<a href="<?php echo get_post_meta($post->ID, 'facebook-profile', true); ?>"> 
+			<a href="<?php /* Display the artist's socials  */ echo get_post_meta($post->ID, 'facebook-profile', true); ?>"> 
 			<img alt="Qries" src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" width="50" height="50">  
 			</p>
+
+			<?php /* Display the post author's avatar */ echo get_avatar( get_the_author_meta('user_email'), $size = '100'); ?>
 			
-			<!-- Display the post author's avatar -->
-			<?php echo get_avatar( get_the_author_meta('user_email'), $size = '100'); ?>
-			
-			<!-- Display the date and a link to other posts by this author -->
-			<p><small><?php the_time( 'jS F, Y' ); ?> by <?php the_author_posts_link(); ?></small></p>
+			<p><small><?php /* Display the date and a link to other posts by this author */ the_time( 'jS F, Y' ); ?> by <?php the_author_posts_link(); ?></small></p>
 		</div>
 		
 		<?php endwhile; wp_reset_postdata(); else : ?>
