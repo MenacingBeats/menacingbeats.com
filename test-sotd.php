@@ -1,13 +1,13 @@
 <!-- Wordpress API -->
-<?php define('WP_USE_THEMES' , false); require('./testmb/wp-blog-header.php' ); ?>
+<?php define('WP_USE_THEMES' , false); require('./content/wp-blog-header.php' ); ?>
 
 <html>
 	<head>
 		<title> SOTD Test </title>
 	</head>
 	<body>
-		<!-- Start loop for category 6 'SOTD' -->
-		<?php $query = new WP_Query( 'cat=7&posts_per_page=1' ); ?>
+		<!-- Start loop for category 2 'SOTD' -->
+		<?php $query = new WP_Query( 'cat=2&posts_per_page=1' ); ?>
 		<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 		
 		<div class="post">
@@ -24,7 +24,7 @@
 			
 			<!-- Display the artist's socials -->
 			<p>Artist Facebook: 
-			<a href="<?php echo get_post_meta($post->ID, 'Test-facebook', true); ?>"> 
+			<a href="<?php echo get_post_meta($post->ID, 'facebook-profile', true); ?>"> 
 			<img alt="Qries" src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" width="50" height="50">  
 			</p>
 			
