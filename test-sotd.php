@@ -21,22 +21,22 @@
 			
 			<p>Artist: 
 			<a href="<?php /* Display Website icon & link  */ echo get_post_meta($post->ID, 'artist-website', true); ?>">
-			<img alt="Qries" src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" width="50" height="50"></a> 
+			<img alt="Qries" src="https://s.w.org/style/images/about/WordPress-logotype-wmark-white.png" width="50" height="50"></a> 
 			<a href="<?php /* Display Facebook icon & link  */ echo get_post_meta($post->ID, 'artist-facebook', true); ?>">
 			<img alt="Qries" src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" width="50" height="50"></a>  
 			<a href="<?php /* Display Soundcloud icon & link  */ echo get_post_meta($post->ID, 'artist-soundcloud', true); ?>">
-			<img alt="Qries" src="https://w.soundcloud.com/icon/?" width="50" height="50"></a>  
+			<img alt="Qries" src="https://w.soundcloud.com/icon/assets/images/orange_white_64-94fc761.png" width="50" height="50"></a>  
 			<a href="<?php /* Display Beatport icon & link  */ echo get_post_meta($post->ID, 'artist-beatport', true); ?>">
 			<img alt="Qries" src="https://support.beatport.com/hc/en-us/article_attachments/201330410/Logo_Mark.png" width="50" height="50"></a>
 			</p>
 			
 			<p>Label/Promoter: 
 			<a href="<?php /* Display Website icon & link  */ echo get_post_meta($post->ID, 'promoter-website', true); ?>">
-			<img alt="Qries" src="https://support.beatport.com/hc/en-us/article_attachments/201330410/Logo_Mark.png" width="50" height="50"></a>
+			<img alt="Qries" src="https://s.w.org/style/images/about/WordPress-logotype-wmark-white.png" width="50" height="50"></a>
 			<a href="<?php /* Display Facebook icon & link  */ echo get_post_meta($post->ID, 'promoter-facebook', true); ?>">
 			<img alt="Qries" src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" width="50" height="50"></a>  
 			<a href="<?php /* Display Soundcloud icon & link  */ echo get_post_meta($post->ID, 'promoter-soundcloud', true); ?>">
-			<img alt="Qries" src="https://w.soundcloud.com/icon/?" width="50" height="50"></a>  
+			<img alt="Qries" src="https://w.soundcloud.com/icon/assets/images/orange_white_64-94fc761.png" width="50" height="50"></a>  
 			<a href="<?php /* Display Beatport icon & link  */ echo get_post_meta($post->ID, 'promoter-beatport', true); ?>">
 			<img alt="Qries" src="https://support.beatport.com/hc/en-us/article_attachments/201330410/Logo_Mark.png" width="50" height="50"></a>
 			</p>
