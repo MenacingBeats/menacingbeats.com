@@ -1,14 +1,23 @@
-# menacingbeats.com
-Welcome to Meancingbeats.com github repository! 
+# Your Favicon Package
 
-From here the project team can add(push) or download(pull) the current master code repository to work on collectively. 
+This package was generated with [RealFaviconGenerator](https://realfavicongenerator.net/) [v0.16](https://realfavicongenerator.net/change_log#v0.16)
 
-What do i need to use these services?
-1. Download Visual Studio Code https://code.visualstudio.com/ + open VS Code and download the extension for github compatability
-2. Download git from https://git-scm.com/downloads
-3. Create a personal github account 
-3. Learn the basics of git & github 
-https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
-https://guides.github.com/activities/hello-world/
-4. Please create a branch off the master and make commits to be approved. The Master should never be edited directly.
+## Install instructions
 
+To install this package:
+
+Extract this package in the root of your web site. If your site is <code>http://www.example.com</code>, you should be able to access a file named <code>http://www.example.com/favicon.ico</code>.
+
+Insert the following code in the `head` section of your pages:
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <meta name="apple-mobile-web-app-title" content="Menacing Beats">
+    <meta name="application-name" content="Menacing Beats">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+
+*Optional* - Check your favicon with the [favicon checker](https://realfavicongenerator.net/favicon_checker)
