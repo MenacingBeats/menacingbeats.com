@@ -437,9 +437,6 @@ html .grid-item img {
     color: #f2f2f2;
 }
 
-.card-text {
-    color: ;
-}
 
 
     /* MOBILE FOOTER */
@@ -551,9 +548,6 @@ html .grid-item img {
         cursor: pointer;
         text-decoration-line: underline;
     }
-
-
-
 
 }
 
@@ -1097,4 +1091,45 @@ input[type=submit]:hover {
 
 .about-item h2, h3 {
     text-align: center;
+    
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+html .about-box {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    padding: 50px;
+}
+
+html .about-item {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+
+html .about-item p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+html .about-container {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-item h2, h3 {
+    text-align: center;
+
+}
+html .about-img {
+    width: 100%;
+}
+
 }
