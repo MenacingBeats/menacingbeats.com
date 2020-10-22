@@ -126,7 +126,7 @@
             <div class="w3-content w3-section">
                 <img class="mySlides w3-animate-right" src="menacingbeats-logo-fullpage.jpg" alt="meancingbeats-logo-fullpage">
                 <img class="mySlides w3-animate-right" src="menacingbeats-beetport-banner.jpg" alt="menacingbeats-beetport-banner">
-                <img class="mySlides w3-animate-right" src="menacingbeats-cercle-festival-2021.jpg" alt="menacingbeats-cercle-festival-2021">
+                <img class="mySlides w3-animate-right" src="menacingbeats-melbourne-music-week.png" alt="menacingbeats-cercle-festival-2021">
                 <img class="mySlides w3-animate-right" src="menacingbeats-save-our-scene-banner.png" alt="meancingbeats-save-our-scene-banner">
               </div>
 
