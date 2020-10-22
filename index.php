@@ -58,7 +58,7 @@
                 <a class="links-only" href="sotd.html">SOTD</a>
                 <a class="links-only" href="live-techno.html">LIVE 
                     <svg height="16" width="8" class="blinking">
-                    <circle cx="4" cy="4" r="3" fill="red" />
+                    <circle cx="4" cy="4" r="3" fill="" />
                     Sorry, your browser does not support inline SVG.  
                   </svg> </a>
                 <div class="dropdown">
@@ -70,7 +70,7 @@
                       <a href="#">PROMOTERS & LABELS</a>
                     </div>
                   </div>
-                <a class="links-only" href="venue-guide.html">VENUES</a>
+                <!-- <a class="links-only" href="venue-guide.html">VENUES</a> -->
                 <a class="links-only" href="about.html">ABOUT</a>
                 <a class="links-only" href="contact.html">CONTACT</a>
 
