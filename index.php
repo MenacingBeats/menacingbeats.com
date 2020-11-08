@@ -130,14 +130,14 @@
                 <img class="mySlides w3-animate-right" src="menacingbeats-save-our-scene-banner.png" alt="meancingbeats-save-our-scene-banner">
               </div>
 
-              <div class="wrapper" style="width:100%;">
+              <div class="wrapper" style="width:100%; font-family: 'Rajdhani', sans-serif;">
 				<?php /* Start loop for category 2 'SOTD' */ $query = new WP_Query( 'cat=2&posts_per_page=1' ); ?>
 				<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 				
 				<div class="post" style="color:#f2f2f2; font-size:30px;">
 					<h2><?php /* Display the post title */ the_title(); ?></h2>
 					
-					<div class="entry" style="width:80%; margin:0 auto;"><?php /* Display the post content */ the_content(); ?></div>
+					<div class="entry" style="width:100%; height: 30vh; margin:0 auto;"><?php /* Display the post content */ the_content(); ?></div>
 					
 					<p><small><?php /* Display the tags */ the_tags(); ?></small></p>
 					
