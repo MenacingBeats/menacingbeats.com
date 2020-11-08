@@ -54,14 +54,14 @@
 <!-- Navbar -->
         <div class="topNav" id="myTopNav">
             <div class="nav-text">
-                <a href="index.html" class="active"><img class="nav-logo" src="menacingbeats-logo-white.png" alt="menacingbeats-logo"></a>
+                <a href="index.php" class="active"><img class="nav-logo" src="menacingbeats-logo-white.png" alt="menacingbeats-logo"></a>
                 <a class="links-only" href="sotd.html">SOTD</a>
                 <a class="links-only" href="live-techno.html">LIVE 
                     <svg height="16" width="8" class="blinking">
-                    <circle cx="4" cy="4" r="3" fill="" />
+                    <circle cx="4" cy="4" r="3" fill="red" />
                     Sorry, your browser does not support inline SVG.  
                   </svg> </a>
-                <div class="dropdown">
+                <!-- <div class="dropdown">
                     <button class="dropbtn">ARTISTS
                       <i class="fa fa-caret-down"></i>
                     </button>
@@ -69,7 +69,7 @@
                       <a href="#">DJs & PRODUCERS</a>
                       <a href="#">PROMOTERS & LABELS</a>
                     </div>
-                  </div>
+                  </div> -->
                 <!-- <a class="links-only" href="venue-guide.html">VENUES</a> -->
                 <a class="links-only" href="about.html">ABOUT</a>
                 <a class="links-only" href="contact.html">CONTACT</a>
@@ -126,7 +126,7 @@
             <div class="w3-content w3-section">
                 <img class="mySlides w3-animate-right" src="menacingbeats-logo-fullpage.jpg" alt="meancingbeats-logo-fullpage">
                 <img class="mySlides w3-animate-right" src="menacingbeats-beetport-banner.jpg" alt="menacingbeats-beetport-banner">
-                <img class="mySlides w3-animate-right" src="menacingbeats-melbourne-music-week.png" alt="menacingbeats-cercle-festival-2021">
+                <img class="mySlides w3-animate-right" src="menacingbeats-melbourne-music-week.png" alt="menacingbeats-melbourne-music-week">
                 <img class="mySlides w3-animate-right" src="menacingbeats-save-our-scene-banner.png" alt="meancingbeats-save-our-scene-banner">
               </div>
 
