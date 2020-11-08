@@ -130,7 +130,7 @@
                 <img class="mySlides w3-animate-right" src="menacingbeats-save-our-scene-banner.png" alt="meancingbeats-save-our-scene-banner">
               </div>
 
-              <div class="wrapper" style="width:100%; font-family: 'Rajdhani', sans-serif;">
+              <div class="wrapper" style="height:100vh; width:100%; font-family: 'Rajdhani', sans-serif;">
 				<?php /* Start loop for category 2 'SOTD' */ $query = new WP_Query( 'cat=2&posts_per_page=1' ); ?>
 				<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 				
