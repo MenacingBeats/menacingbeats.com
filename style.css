@@ -253,13 +253,17 @@ DROPDOWN MENU IN NAV */
 
 
 /* Wordpress Code */
-.post {
+html .post h2 {
     color: white;
-    background-color: blue;
+    background-color: red;
+    width: 80%;
+    border: 1px solid green;
 }
 
-.entry {
+html .entry {
     width: 80%;
+    color: red;
+    border: 1px solid green;
 }
 
 /* LANDING PAGE MENACING BEATS + SPINNING BEETROOT */
