@@ -137,7 +137,7 @@
 				<div class="post" style="color:#f2f2f2; font-size:30px;">
 					<h2><?php /* Display the post title */ the_title(); ?></h2>
 					
-					<div class="entry" style="width:80%;><?php /* Display the post content */ the_content(); ?></div>
+					<div class="entry" style="width:80%; margin:0 auto;"><?php /* Display the post content */ the_content(); ?></div>
 					
 					<p><small><?php /* Display the tags */ the_tags(); ?></small></p>
 					
