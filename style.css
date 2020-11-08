@@ -265,7 +265,8 @@ DROPDOWN MENU IN NAV */
                     }
 
                     .wrapper {
-                    height: 90vh;
+                    height: 80vh;
+                    width: 80%;
                     }
 
                 .w3-content {
