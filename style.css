@@ -252,6 +252,15 @@ DROPDOWN MENU IN NAV */
   }
 
 
+/* Wordpress Code */
+.post {
+    color: white;
+    background-color: blue;
+}
+
+.entry {
+    width: 80%;
+}
 
 /* LANDING PAGE MENACING BEATS + SPINNING BEETROOT */
 
