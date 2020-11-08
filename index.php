@@ -134,7 +134,7 @@
 				<?php /* Start loop for category 2 'SOTD' */ $query = new WP_Query( 'cat=2&posts_per_page=1' ); ?>
 				<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 				
-				<div class="post">
+				<div class="post" style="color:blue; font-size:30px; width:80%;">
 					<h2><?php /* Display the post title */ the_title(); ?></h2>
 					
 					<div class="entry"><?php /* Display the post content */ the_content(); ?></div>
