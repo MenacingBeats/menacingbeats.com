@@ -278,12 +278,13 @@ html .entry {
                     }
 
                     .wrapper {
-                    height: 80vh;
+                    height: 90vh;
                     width: 80%;
                     }
 
                 .w3-content {
-                    width: 100%;
+                    width: 90%;
+                    height: 30vh;
                 }
 
                 .mySlides {
