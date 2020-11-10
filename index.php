@@ -36,19 +36,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -130,14 +118,14 @@
                 <img class="mySlides w3-animate-right" src="menacingbeats-save-our-scene-banner.png" alt="meancingbeats-save-our-scene-banner">
               </div>
 
-              <div class="wrapper" style="height:100vh; width:100%; font-family: 'Rajdhani', sans-serif;">
+              <div class="wrapper">
 				<?php /* Start loop for category 2 'SOTD' */ $query = new WP_Query( 'cat=2&posts_per_page=1' ); ?>
 				<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 				
-				<div class="post" style="height:500px; color:#f2f2f2; font-size:30px;">
+				<div class="post">
 					<h2><?php /* Display the post title */ the_title(); ?></h2>
 					
-					<div class="entry" style="width:100%; height:500px; margin:0 auto;"><?php /* Display the post content */ the_content(); ?></div>
+					<div class="entry"><?php /* Display the post content */ the_content(); ?></div>
 					
 					<p><small><?php /* Display the tags */ the_tags(); ?></small></p>
 					
