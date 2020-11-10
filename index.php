@@ -70,7 +70,7 @@
                       <a href="#">PROMOTERS & LABELS</a>
                     </div>
                   </div> -->
-                <!-- <a class="links-only" href="venue-guide.html">VENUES</a> -->
+                <a class="links-only" href="venue-guide.html">VENUES</a>
                 <a class="links-only" href="about.html">ABOUT</a>
                 <a class="links-only" href="contact.html">CONTACT</a>
 
@@ -79,7 +79,7 @@
             </div>
                 <div class="nav-img">
                 <!-- Socials -->
-                    <a href="https://www.facebook.com/menacingbeats,%20@menacingbeats"> <img src="menacingbeats-facebook-logo-white.png" alt="menacingbeats-facebook-logo"> 
+                    <a href="https://www.facebook.com/menacingbeats"> <img src="menacingbeats-facebook-logo-white.png" alt="menacingbeats-facebook-logo"> 
                     </a>
                     <a href="https://www.instagram.com/menacingbeats/"> <img src="menacingbeats-instagram-logo-white.png" alt="menacingbeats-instagram-logo"> 
                     </a>
