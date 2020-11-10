@@ -950,8 +950,8 @@ input[type=submit]:hover {
 }
 
 .menacing-contact-logo img {
-    width: 100%;
     height: 500px;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -959,12 +959,12 @@ input[type=submit]:hover {
 }
 
 .menacing-contact-logo{
-    width: 100%;
+    background-color: black;
+    width: 80%;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 
 
