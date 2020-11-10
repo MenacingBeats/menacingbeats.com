@@ -201,7 +201,7 @@ DROPDOWN MENU IN NAV */
     animation: 1s blink ease infinite;
   }
   
-  @keyframes "blink" {
+  @keyframes blink {
     from,
     to {
       opacity: 0;
@@ -221,7 +221,7 @@ DROPDOWN MENU IN NAV */
     }
   }
   
-  @-webkit-keyframes "blink" {
+  @-webkit-keyframes blink {
     from,
     to {
       opacity: 0;
@@ -231,7 +231,7 @@ DROPDOWN MENU IN NAV */
     }
   }
   
-  @-ms-keyframes "blink" {
+  @-ms-keyframes blink {
     from,
     to {
       opacity: 0;
@@ -241,7 +241,7 @@ DROPDOWN MENU IN NAV */
     }
   }
   
-  @-o-keyframes "blink" {
+  @-o-keyframes blink {
     from,
     to {
       opacity: 0;
@@ -251,6 +251,9 @@ DROPDOWN MENU IN NAV */
     }
   }
 
+.sotd-gif-card img{
+    height: 300px;
+}
 
 /* Wordpress Code */
 html .post h2 {
@@ -265,7 +268,7 @@ html .entry {
     width: 80%;
     color: red;
     border: 1px solid blue;
-
+}
 /* LANDING PAGE MENACING BEATS + SPINNING BEETROOT */
 
                     .wrapper2, .wrapper3 {
@@ -452,12 +455,7 @@ html .grid-item img {
     color: #f2f2f2;
 }
 
-.card-text {
-    color: ;
-}
-
-
-    /* MOBILE FOOTER */
+  /* MOBILE FOOTER */
 
     .footer-container {
         height: auto;
