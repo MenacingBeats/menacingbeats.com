@@ -148,28 +148,28 @@
 
 
               <div class="card-group">
-                <div class="card">
-                        <img src="menacingbeats-sotd-card.jpg" class="card-img-top" alt="menacingbeats-sotd-card">
+                <div class="card"><a href="sotd.html">
+                        <img src="menacingbeats-logo-black-spin.gif" class="card-img-top" alt="menacingbeats-sotd-card">
                   <div class="card-body">
                     <h5 class="card-title">SOTD</h5>
-                    <p class="card-text">Techno selected daily</p>
+                    <p class="card-text">Techno selected daily</p></a>
                     <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                   </div>
                 </div>
-                <div class="card">
+                <div class="card"><a href="venue-guide.html">
                   <img src="menacingbeats-venue-guide-club.jpg" class="card-img-top" alt="menacingbeats-venue-guide-club">
                   <div class="card-body">
                     <h5 class="card-title">VENUE GUIDE</h5>
-                    <p class="card-text">Find Melbourne Techno Venues</p>
+                    <p class="card-text">Find Melbourne Techno Venues</p></a>
                     <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                   </div>
                 </div>
-                <div class="card">
+                <div class="card"><a href="live-techno.html">
                     <img src="menacingbeats-live-techno.jpg" class="card-img-top" alt="menacingbeats-venue-guide-club">
                       </video>
                   <div class="card-body">
                     <h5 class="card-title">LIVE TECHNO</h5>
-                    <p class="card-text">Find streams & events</p>
+                    <p class="card-text">Find streams & events</p></a>
                     <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                   </div>
                 </div>
