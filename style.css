@@ -252,7 +252,7 @@ DROPDOWN MENU IN NAV */
   }
 
 .sotd-gif-card img{
-    height: 300px;
+    object-fit: contain;
 }
 
 /* Wordpress Code */
@@ -290,14 +290,14 @@ html .entry {
 
                 .mySlides {
                     display:none;
-                    height: 400px;
-                    object-fit: contain;
+                    height: 300px;
+                    object-fit: cover;
                     width: 100%;
                 }
                 
                 .mySlides img {
                     display:none;
-                    object-fit: contain;
+                    object-fit: cover;
                 }
                 
                 .w3-animate-right {
