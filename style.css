@@ -267,11 +267,16 @@ html .post h2 {
     color:  #f2f2f2;
     background-color: #202020;
     width: 100%;
+    padding: 20px;
 }
 
 html .entry {
     width: 100%;
     color:  #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 /* LANDING PAGE MENACING BEATS + SPINNING BEETROOT */
 
