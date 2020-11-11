@@ -251,8 +251,12 @@ DROPDOWN MENU IN NAV */
     }
   }
 
-.sotd-gif-card img{
+/* .sotd-gif-card img{
     object-fit: contain;
+} */
+
+.card-body {
+    color: #202020;
 }
 
 /* Wordpress Code */
@@ -268,9 +272,6 @@ html .post h2 {
 html .entry {
     width: 100%;
     color:  #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 /* LANDING PAGE MENACING BEATS + SPINNING BEETROOT */
 
