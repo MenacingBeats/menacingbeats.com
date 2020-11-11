@@ -129,7 +129,7 @@
 					
 					<p><small><?php /* Display the tags */ the_tags(); ?></small></p>
 					
-					<p>Artist Facebook: 
+					<p class="tags">Artist Facebook: 
 					<a href="<?php /* Display the artist's socials  */ echo get_post_meta($post->ID, 'facebook-profile', true); ?>">
 					<img alt="Qries" src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" width="50" height="50"></a>  
 					</p>

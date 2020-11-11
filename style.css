@@ -264,19 +264,26 @@ html .post h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:  #f2f2f2;
+    
     background-color: #202020;
     width: 100%;
     padding: 20px;
 }
 
 html .entry {
-    width: 100%;
+    width: 80%;
     color:  #f2f2f2;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-size: 100% 500px;
+    text-align: center;
+}
+
+html .tags {
+    
+    color:  #f2f2f2;
 }
 /* LANDING PAGE MENACING BEATS + SPINNING BEETROOT */
 
