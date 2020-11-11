@@ -258,31 +258,34 @@ DROPDOWN MENU IN NAV */
 /* Wordpress Code */
 html .post h2 {
     display: flex;
-    color: white;
-    background-color: white;
-    width: 80%;
-    border: 1px solid blue;
+    justify-content: center;
+    align-items: center;
+    color:  #f2f2f2;
+    background-color: #202020;
+    width: 100%;
 }
 
 html .entry {
-    width: 80%;
-    color: red;
-    border: 1px solid blue;
+    width: 100%;
+    color:  #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* LANDING PAGE MENACING BEATS + SPINNING BEETROOT */
 
-                    .wrapper2, .wrapper3 {
+                    /* .wrapper2, .wrapper3 {
                         background-color: lightgrey;
                         width: 1200px;
                         display: flex;
                         justify-content: center;
                      flex-wrap: wrap;
                      height: 111vh;
-                    }
+                    } */
 
                     .wrapper {
-                    height: 90vh;
-                    width: 80%;
+                    height: 100vh;
+                    width: 100%;
                     }
 
                 .w3-content {
