@@ -288,15 +288,10 @@ html .entry {
                     width: 100%;
                     }
 
-                .w3-content {
-                    width: 90%;
-                    height: 30vh;
-                }
-
                 .mySlides {
                     display:none;
-                    height: 500px;
-                    object-fit: cover;
+                    height: 400px;
+                    object-fit: contain;
                     width: 100%;
                 }
                 
