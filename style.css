@@ -264,10 +264,11 @@ DROPDOWN MENU IN NAV */
 html .post {
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
-
-
 
 html .post h2 {
     display: flex;
@@ -290,19 +291,23 @@ html .wp-block-embed__wrapper {
     padding: 20px;
 }
 
-html .entry p {
-    width: 50%;
+html .entry {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+html .entry p {
+    width: 50%;
     text-align: center;
     color: #f2f2f2;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
-html .tags .artist {
+html .tags, .artist {
     display: flex;
     align-items: center;
     justify-content: center;
