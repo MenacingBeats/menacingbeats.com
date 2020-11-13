@@ -278,6 +278,7 @@ html .post h2 {
     background-color: #202020;
     width: 100%;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html .wp-block-embed__wrapper {
@@ -300,7 +301,8 @@ html .entry {
 }
 
 html .entry p {
-    width: 50%;
+    border: 1px solid #f2f2f2;
+    width: 70%;
     text-align: center;
     color: #f2f2f2;
     padding: 20px;
@@ -311,10 +313,11 @@ html .tags, .artist {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     color:  #f2f2f2;
     padding: 10px;
+    border: 1px solid #f2f2f2;
 }
 /* LANDING PAGE MENACING BEATS + SPINNING BEETROOT */
 
