@@ -149,7 +149,7 @@
 
               <div class="card-group">
                 <div class="card"><a href="sotd.html">
-                        <img src="menacingbeats-logo-black-spin.gif" class="card-img-top sotd-gif-card" alt="menacingbeats-sotd-card">
+                        <img src="android-chrome-512x512.png" class="card-img-top sotd-gif-card" alt="menacingbeats-sotd-card">
                   <div class="card-body">
                     <h5 class="card-title">SOTD</h5>
                     <p class="card-text">Techno selected daily</p></a>
