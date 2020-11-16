@@ -277,18 +277,15 @@ html .post h2 {
     color:  #f2f2f2;
     background-color: #202020;
     width: 100%;
-    padding: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
-html .wp-block-embed__wrapper {
+html .htm15-video-container {
     color: #f2f2f2;
     padding: 20px;
     border: 1px solid red;
-    position: relative;
-    width: 1000px;
-    height: 0;
-    padding-bottom: 56.25%
+    width: 100%;
+    height: 500px;
 }
 
 html .entry {
