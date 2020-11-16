@@ -263,7 +263,7 @@ DROPDOWN MENU IN NAV */
 
 html .post {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -291,13 +291,10 @@ html .wp-block-embed-youtube {
     align-items: center;
 }
 
-html .ytp-cued-thumbnail-overlay-image {
+html iframe {
     height: 500px;
+    width: 100%;
 }
-
-/* html iframe {
-    height: 500px;
-} */
 
 html .entry {
     width: 100%;
