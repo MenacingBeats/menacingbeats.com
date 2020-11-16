@@ -278,9 +278,11 @@ html .post h2 {
     background-color: #202020;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    margin-top: 10px;
 }
 
-html .htm15-video-container {
+html .wp-block-embed-youtube {
     color: #f2f2f2;
     padding: 20px;
     border: 1px solid red;
