@@ -286,16 +286,18 @@ html .wp-block-embed-youtube {
     padding: 20px;
     border: 1px solid red;
     width: 100%;
-    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 html .ytp-cued-thumbnail-overlay-image {
     height: 500px;
 }
 
-html iframe {
+/* html iframe {
     height: 500px;
-}
+} */
 
 html .entry {
     width: 100%;
