@@ -284,9 +284,7 @@ html .post h2 {
 html .wp-block-embed-youtube {
     color: #f2f2f2;
     padding: 20px;
-    border: 1px solid red;
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
