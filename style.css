@@ -279,7 +279,6 @@ html .post h2 {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
-    margin-top: 10px;
 }
 
 html .wp-block-embed-youtube {
@@ -288,6 +287,16 @@ html .wp-block-embed-youtube {
     border: 1px solid red;
     width: 100%;
     height: 500px;
+}
+
+html .ytp-cued-thumbnail-overlay-image {
+    width: 100%;
+    height: 100%;
+}
+
+html .post iframe {
+    width: 100%;
+    height: 100%;
 }
 
 html .entry {
