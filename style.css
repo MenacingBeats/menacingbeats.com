@@ -257,6 +257,12 @@ DROPDOWN MENU IN NAV */
 
 .card-body {
     color: #202020;
+    text-decoration: none;
+    
+}
+
+.card-body a:visited {
+    color: #202020;
 }
 
 /* Wordpress Code */
@@ -303,8 +309,8 @@ html .entry {
 
 html .entry p {
     border: 1px solid #f2f2f2;
-    width: 620px;
-    text-align: center;
+    width: 60%;
+    text-align: justify;
     color: #f2f2f2;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -331,14 +337,14 @@ html .tags, .artist {
                     } */
 
                     .wrapper {
-                    height: 100vh;
+                    height: 150vh;
                     width: 100%;
                     }
 
                 .mySlides {
                     display:none;
                     height: 300px;
-                    object-fit: cover;
+                    object-fit: contain;
                     width: 100%;
                 }
                 
