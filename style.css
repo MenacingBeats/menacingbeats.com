@@ -272,7 +272,7 @@ html .post {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 150vh;
+    height: 120vh;
 }
 
 html .post h2 {
@@ -337,7 +337,7 @@ html .tags, .artist {
                     } */
 
                     .wrapper {
-                    height: 150vh;
+                    height: 120vh;
                     width: 100%;
                     }
 
@@ -1161,4 +1161,8 @@ input[type=submit]:hover {
 
 .about-item h2, h3 {
     text-align: center;
+}
+
+a:link {
+    color: #f2f2f2;
 }
