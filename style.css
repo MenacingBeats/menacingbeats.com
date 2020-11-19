@@ -337,7 +337,7 @@ html .tags, .artist {
                     } */
 
                     .wrapper {
-                    height: 120vh;
+                    height: 140vh;
                     width: 100%;
                     }
 
@@ -986,7 +986,7 @@ input[type=submit]:hover {
     width: 80%;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    padding-top: 50px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -997,7 +997,6 @@ input[type=submit]:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 130vh;
 }
 
 .menacing-contact-logo img {
