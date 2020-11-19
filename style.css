@@ -2,6 +2,8 @@
 /* Smooth scroll the call to action clicks */
 html {
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden; 
 }
 
 /* Format document to neutral */
